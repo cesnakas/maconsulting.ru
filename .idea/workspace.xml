@@ -2,120 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4abb654a-a96f-4a89-aa7b-58cb32b7690c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bitrixlangplugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/css/fontello.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/css/media.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/Montserrat-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/fontello.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/fontello.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/fontello.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/fontello.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/fonts/fontello.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-nav-green.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-nav.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-serv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-serv_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/arrow-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/banner-page/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/banner-page/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/banner-page/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/bg/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/clients/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/email_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/gallery/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/map-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/phone_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/point-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/service-img-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/services/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/slide/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/slide/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/slide/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/slide/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/video-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/img/video-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/dist/js/simpleParallax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/projects.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/service8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/layout/training.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622233130441</updated>
-      <workItem from="1622233134645" duration="648000" />
+      <workItem from="1622233134645" duration="2250000" />
     </task>
     <servers />
   </component>
