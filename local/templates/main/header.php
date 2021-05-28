@@ -43,3 +43,36 @@ $asset = Asset::getInstance();
 
     <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
+    <div class="Wrapper">
+        <div class="shadow"></div>
+        <!---Header-->
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link"><img src="img/logo.svg" alt=""/></a>
+                </div>
+                <div class="header__content">
+                    <nav class="nav navMain-js">
+                        <ul class="nav__ul">
+                            <li class="nav__li"><a href="about.html" class="nav__link nav__link-anim">О Компании</a></li>
+                            <li class="nav__li"><a href="#servicesMain__anchor" class="nav__link nav__link-anim link-anchor">Услуги</a></li>
+                            <li class="nav__li"><a href="training.html" class="nav__link nav__link-anim">Тренинги Market Access</a></li>
+                            <li class="nav__li"><a href="projects.html" class="nav__link nav__link-anim">Проекты</a></li>
+                            <li class="nav__li"><a href="contacts.html" class="nav__link nav__link-anim">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="menu-burger menu-burger-js">
+                        <span class="menu-burger__name">Меню</span>
+                        <span class="menu-burger__icon">
+                                <span class="menu-burger__icon-line"></span>
+                            </span>
+                    </button>
+                    <div class="phone-group">
+                        <a href="tel:+74956200947" class="phone-link">+7 495 620 09 47</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---/Header-->
+        <!---Main Content-->
+        <section class="mainContent">
