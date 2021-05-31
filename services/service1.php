@@ -15,8 +15,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                         <span class="page-section-item__name">Наши услуги</span>
                     </div>
                     <div class="service-pagination__btn">
-                        <a href="service8.html" class="service-pagination__btn-prev nav__link-anim"></a>
-                        <a href="service2.html" class="service-pagination__btn-next nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service8/" class="service-pagination__btn-prev nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service2/" class="service-pagination__btn-next nav__link-anim"></a>
                     </div>
                 </div>
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Анализ организации медицинской помощи, сбор информации
@@ -112,31 +112,31 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="servicePageBot animUp _anim-items _anim-no-hide">
                 <div class="servicePageBot__inner">
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">08</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Конференции и семинары</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service8/">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">08</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Конференции и семинары</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">02</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Формирование доказательной базы</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service2/">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">02</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Формирование доказательной базы</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                 </div>

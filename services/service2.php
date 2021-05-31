@@ -8,15 +8,15 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                 <a href="<?=SITE_DIR?>#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
                 <div class="service-pagination">
                     <div class="page-section-item__heading">
-                                <span class="page-section-item__number">
-                                    <span class="page-section-item__number-current">02</span>
-                                    <span class="page-section-item__number-all">08</span>
-                                </span>
+                        <span class="page-section-item__number">
+                            <span class="page-section-item__number-current">02</span>
+                            <span class="page-section-item__number-all">08</span>
+                        </span>
                         <span class="page-section-item__name">Наши услуги</span>
                     </div>
                     <div class="service-pagination__btn">
-                        <a href="service1.html" class="service-pagination__btn-prev nav__link-anim"></a>
-                        <a href="service3.html" class="service-pagination__btn-next nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service1/" class="service-pagination__btn-prev nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service3/" class="service-pagination__btn-next nav__link-anim"></a>
                     </div>
                 </div>
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Формирование доказательной базы</h1>
@@ -102,7 +102,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="servicePageBot animUp _anim-items _anim-no-hide">
                 <div class="servicePageBot__inner">
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service1/">
                             <span class="linkPageService__content">
                                 <span class="linkPageService__number">
                                     <span class="linkPageService__number-current">01</span>
@@ -118,7 +118,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                         </a>
                     </div>
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service3/">
                             <span class="linkPageService__content">
                                 <span class="linkPageService__number">
                                     <span class="linkPageService__number-current">03</span>
