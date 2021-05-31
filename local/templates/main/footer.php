@@ -4,6 +4,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
 
         </section>
         <!---/Main Content-->
+
+        <? if (!CSite::InDir('/contacts/')): ?>
         <!---Footer-->
         <footer class="footer">
             <div class="footer-line"></div>
@@ -64,6 +66,21 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
             </div>
         </footer>
         <!---/Footer-->
+        <? else: ?>
+        <!---Footer-->
+        <footer class="footer">
+            <div class="footer-line"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 animUp _anim-items _anim-no-hide">
+                        <div class="footer__producer">© 2021 Market Access Consulting</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---/Footer-->
+        <? endif; ?>
+
     </div>
 
 </body>
