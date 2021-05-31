@@ -176,7 +176,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="direction_of_work__caption animUp _anim-items _anim-no-hide">Текст про то, что мы выбрали наиболее актуальные для российского рынка вопросы, что мы следим за тенденциями и корректируем повестку……</div>
-                    <a href="#" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
+                    <a href="<?=SITE_DIR?>projects/" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="direction_of_work__content animUp _anim-items _anim-no-hide">
@@ -206,7 +206,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 </div>
                             </div>
                             <div class="col-12 d-block d-md-none">
-                                <a href="#" class="more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
+                                <a href="<?=SITE_DIR?>projects/" class="more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
                             </div>
                         </div>
                     </div>

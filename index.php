@@ -71,7 +71,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     <div class="aboutMain__content animUp _anim-items _anim-no-hide">
                         <p>Мы предоставляем услуги полного цикла, начиная от подготовки аналитических отчетов и сбора статистических данных по различным терапевтическим областям до разработки долгосрочных, эффективных стратегий.</p>
                         <p>Мы повышаем доступность современных медицинских  технологий для пациентов, используя лучшие международные практики, знания и компетенции в области Market Access, сотрудничество с ключевыми экспертами системы здравоохранения,  а также наработанную репутацию.</p>
-                        <a href="#" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>
+                        <a href="<?=SITE_DIR?>about/" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="trainingMain__caption animUp _anim-items _anim-no-hide">Мы эксперты по разработке авторских образовательных программ и организации корпоративных тренингов, посвященных продвижению медицинских технологий на рынок государственного финансирования. </div>
-                    <a href="#" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">Подробнее о наших<br> тренингах</a>
+                    <a href="<?=SITE_DIR?>training/" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">Подробнее о наших<br> тренингах</a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="trainingMain__content animUp _anim-items _anim-no-hide">
@@ -183,7 +183,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 </div>
                             </div>
                             <div class="col-12 d-block d-md-none">
-                                <a href="#" class="more-link animUp _anim-items _anim-no-hide">Подробнее о наших<br> тренингах</a>
+                                <a href="<?=SITE_DIR?>training/" class="more-link animUp _anim-items _anim-no-hide">Подробнее о наших<br> тренингах</a>
                             </div>
                         </div>
                     </div>

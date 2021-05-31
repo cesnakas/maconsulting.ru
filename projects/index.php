@@ -165,7 +165,7 @@ $APPLICATION->SetTitle("Проекты");
                     <div class="page-section-item__row">
                         <div class="page-section-item__col">
                             <div class="page-section-item__holder">
-                                <a href="#" class="more-link">Свяжитесь с нами, чтобы обсудить<br>детали вашего проекта</a>
+                                <a href="<?=SITE_DIR?>contacts/" class="more-link">Свяжитесь с нами, чтобы обсудить<br>детали вашего проекта</a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Тренинги Market Access");
 ?>
 
     <div class="heading-page">
@@ -131,7 +130,7 @@ $APPLICATION->SetTitle("Тренинги Market Access");
                     <div class="page-section-item__row">
                         <div class="page-section-item__col">
                             <div class="page-section-item__holder">
-                                <a href="#" class="more-link">Связаться с нашим<br>специалистом</a>
+                                <a href="<?=SITE_DIR?>contacts/" class="more-link">Связаться с нашим<br>специалистом</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +183,7 @@ $APPLICATION->SetTitle("Тренинги Market Access");
                     <div class="page-section-item__row">
                         <div class="page-section-item__col">
                             <div class="page-section-item__holder">
-                                <a href="#" class="more-link">Связаться с нашим<br>специалистом</a>
+                                <a href="<?=SITE_DIR?>contacts/" class="more-link">Связаться с нашим<br>специалистом</a>
                             </div>
                         </div>
                     </div>
