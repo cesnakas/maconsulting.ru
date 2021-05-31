@@ -5,7 +5,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
         </section>
         <!---/Main Content-->
 
-        <? if (!CSite::InDir('/contacts/')): ?>
+        <? if (!CSite::InDir(SITE_DIR.'contacts/')): ?>
         <!---Footer-->
         <footer class="footer">
             <div class="footer-line"></div>
@@ -20,11 +20,21 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 animUp _anim-items _anim-no-hide">
                         <nav class="nav">
                             <ul class="nav__ul">
-                                <li class="nav__li"><a href="index.html" class="nav__link nav__link-anim nav__link--active">Главная страница</a></li>
-                                <li class="nav__li"><a href="about.html" class="nav__link nav__link-anim">О Компании</a></li>
-                                <li class="nav__li"><a data-goto="#servicesMain__anchor" href="#" class="nav__link nav__link--anchor">Услуги</a></li>
-                                <li class="nav__li"><a href="training.html" class="nav__link nav__link-anim">Тренинги Market Access</a></li>
-                                <li class="nav__li"><a href="projects.html" class="nav__link nav__link-anim">Проекты</a></li>
+                                <li class="nav__li">
+                                    <a href="<?=SITE_DIR?>" class="nav__link nav__link-anim nav__link--active">Главная страница</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a data-goto="#servicesMain__anchor" href="#" class="nav__link nav__link--anchor">Услуги</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="<?=SITE_DIR?>training/" class="nav__link nav__link-anim">Тренинги Market Access</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="<?=SITE_DIR?>projects/" class="nav__link nav__link-anim">Проекты</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
