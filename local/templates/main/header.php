@@ -56,11 +56,11 @@ $asset = Asset::getInstance();
                 <div class="header__content">
                     <nav class="nav navMain-js">
                         <ul class="nav__ul">
-                            <li class="nav__li"><a href="/about/" class="nav__link nav__link-anim">О Компании</a></li>
+                            <li class="nav__li"><a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a></li>
                             <li class="nav__li"><a href="#servicesMain__anchor" class="nav__link nav__link-anim link-anchor">Услуги</a></li>
-                            <li class="nav__li"><a href="/training/" class="nav__link nav__link-anim">Тренинги Market Access</a></li>
-                            <li class="nav__li"><a href="/projects/" class="nav__link nav__link-anim">Проекты</a></li>
-                            <li class="nav__li"><a href="/contacts/" class="nav__link nav__link-anim">Контакты</a></li>
+                            <li class="nav__li"><a href="<?=SITE_DIR?>training/" class="nav__link nav__link-anim">Тренинги Market Access</a></li>
+                            <li class="nav__li"><a href="<?=SITE_DIR?>projects/" class="nav__link nav__link-anim">Проекты</a></li>
+                            <li class="nav__li"><a href="<?=SITE_DIR?>contacts/" class="nav__link nav__link-anim">Контакты</a></li>
                         </ul>
                     </nav>
                     <button class="menu-burger menu-burger-js">

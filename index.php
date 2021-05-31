@@ -91,49 +91,49 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             <h2 class="title animUp _anim-items _anim-no-hide">Наши услуги</h2>
             <div class="servicesMain__list animUp _anim-items _anim-no-hide">
                 <div class="servicesMain__item">
-                    <a href="service1.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service1/" class="servicesMain__link">
                         <span class="servicesMain__count">01</span>
                         Анализ организации медицинской помощи, сбор информации и аналитика
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service2.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service2/" class="servicesMain__link">
                         <span class="servicesMain__count">02</span>
                         Формирование<br> доказательной базы
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service3.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service3/" class="servicesMain__link">
                         <span class="servicesMain__count">03</span>
                         Government relations
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service4.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service4/" class="servicesMain__link">
                         <span class="servicesMain__count">04</span>
                         Юридический консалтинг
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service5.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service5/" class="servicesMain__link">
                         <span class="servicesMain__count">05</span>
                         PR-технологии
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service6.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service6/" class="servicesMain__link">
                         <span class="servicesMain__count">06</span>
                         Стратегия доступа на рынок
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service7.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service7/" class="servicesMain__link">
                         <span class="servicesMain__count">07</span>
                         Мониторинг и аналитика
                     </a>
                 </div>
                 <div class="servicesMain__item">
-                    <a href="service8.html" class="servicesMain__link">
+                    <a href="<?=SITE_DIR?>service8/" class="servicesMain__link">
                         <span class="servicesMain__count">08</span>
                         Конференции и семинары
                     </a>
