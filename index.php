@@ -16,7 +16,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 <div class="sliderMain__text">Уникальный опыт в разработке и реализации Market Access и GR стратегий. Услуги полного цикла, начиная от подготовки аналитических отчетов и сбора статистических данных по различным терапевтическим областям до разработки долгосрочных, эффективных стратегий</div>
                             </div>
                             <div class="sliderMain__img">
-                                <img src="img/slide/1.png" alt=""/>
+                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/1.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 <div class="sliderMain__text">Сотрудничаем с ключевыми экспертами системы здравоохранения, представителями медицинского сообщества, общественными организациями и др.</div>
                             </div>
                             <div class="sliderMain__img">
-                                <img src="img/slide/2.png" alt=""/>
+                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/2.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 <div class="sliderMain__text">Более 50 компетентных и профессиональных тренеров, а также уже более 1000 подготовленных специалистов</div>
                             </div>
                             <div class="sliderMain__img">
-                                <img src="img/slide/3.png" alt=""/>
+                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/3.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 <div class="sliderMain__text">Используя лучшие международные практики, знания и компетенции, повышаем доступность современных медицинских  технологий для пациентов.</div>
                             </div>
                             <div class="sliderMain__img">
-                                <img src="img/slide/4.png" alt=""/>
+                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/4.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/2.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/2.png" alt=""/>
         </div>
         <div class="paralaxLineRight"></div>
     </div>
@@ -144,7 +144,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/3.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/3.png" alt=""/>
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -195,7 +195,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/4.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/4.png" alt=""/>
         </div>
         <div class="paralaxLineRight paralaxLineRight--gray"></div>
     </div>
@@ -213,32 +213,32 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/1.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/1.png" alt=""/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/2.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/2.png" alt=""/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/3.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/3.png" alt=""/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/4.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/4.png" alt=""/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/5.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/5.png" alt=""/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="clients-slide">
-                        <img src="img/clients/6.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/6.png" alt=""/>
                     </a>
                 </div>
             </div>
@@ -334,7 +334,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/1.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/1.png" alt=""/>
         </div>
     </div>
 

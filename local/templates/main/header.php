@@ -49,7 +49,9 @@ $asset = Asset::getInstance();
         <header class="header">
             <div class="container">
                 <div class="header__logo">
-                    <a href="index.html" class="header__logo-link"><img src="img/logo.svg" alt=""/></a>
+                    <a href="<?=SITE_DIR?>" class="header__logo-link">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/logo.svg" alt=""/>
+                    </a>
                 </div>
                 <div class="header__content">
                     <nav class="nav navMain-js">

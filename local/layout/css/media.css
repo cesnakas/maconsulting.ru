@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+@media(min-width:1366px){
+    .container{
+        max-width: 1240px;
+    }
+}
+@media(min-width:1470px){
+    .container{
+        max-width: 1400px;
+    }
+}
+@media(min-width:1640px){
+    .container{
+        max-width: 1600px;
+    }
+}
+@media(min-width:1920px){
+    .container{
+        max-width: 1720px;
+    }
+}
+@media(max-width: 1639px) {
+	.header .nav__li{ margin: 0 0 0 45px;}
+    .phone-group{ margin: 0 0 0 55px;}
+    .sliderMain__title, .page-section-item__title{ font-size: 50px;}
+    .aboutMain__caption, .trainingMain__caption{ font-size: 32px;}
+    .title{ font-size: 58px;}
+    .servicesMain__link{ font-size: 26px;}
+    .footer .nav__link{ padding: 0 0 0 185px;}
+    .heading-page__title{ font-size: 54px;}
+    .aboutPage__caption, .direction_of_work__caption{ font-size: 30px;}
+    .page-section-item__caption{font-size: 26px; margin: 0 0 50px;}
+    .page-section-item__text{ font-size: 20px;}
+    .page-section-item__number-current{ font-size: 124px;}
+    .heading-page__text{ font-size: 26px;}
+    .contactsPage__form-wrap .title{ font-size: 50px;}
+}
+@media(max-width:1469px){
+    .header .nav__li{ margin: 0 0 0 25px;}
+    .phone-group{ margin: 0 0 0 35px;}
+    .sliderMain__title{ font-size: 40px;}
+    .aboutMain__caption, .trainingMain__caption{ font-size: 28px;}
+    .sliderMain__text, .aboutMain__content, .more-link{ font-size: 20px;}
+    .title{ font-size: 50px;}
+    .servicesMain__link{ font-size: 22px; padding: 25px 75px 25px 55px;}
+    .aboutUsMain__content{ font-size: 20px;}
+    .aboutUsMain__info-detail{ font-size: 26px;}
+    .footer .nav__link{ padding: 0 0 0 125px; font-size: 25px;}
+    .contacts-market__title{ font-size: 30px;}
+    .heading-page__title{ font-size: 42px;}
+    .heading-page__content{ max-width: 50%; padding: 40px 0 30px;}
+    .nav-page__ul{ margin: 0 -20px;}
+    .nav-page__li{padding: 0 20px 30px;}
+    .heading-page .container{ min-height: 640px;}
+    .aboutPage__text .row{ margin: 0 -20px;}
+    .aboutPage__text .row > div{ padding:0 20px;}
+    .spoilersItem__flex{ padding: 20px 0 35px;}
+    .aboutPage__text{ font-size: 20px;}
+    .aboutPage__caption, .direction_of_work__caption{ font-size: 26px;}
+    .galleryContent__title{ font-size: 26px;}
+    .list-info li{ margin: 0 0 20px;}
+    .page-section-item{ padding: 50px 0 80px;}
+}
+@media(max-width:1365px){
+    .header .nav__li{ margin: 0 0 0 15px; font-size: 17px;}
+    .phone-group{ margin: 0 0 0 30px;}
+    .sliderMain__title{ font-size: 36px;}
+    .trainingMain__item{ font-size: 16px;}
+    .heading-page__img-wrap, .anim-line::after{ width: 45%;}
+    .page-section-item__title{ font-size: 40px;}
+    .contactsPage__form-wrap .title{ font-size: 40px;}
+    .contactsPage__form-wrap{ order: 1;}
+    .contactsPage__sidebar{ order: 2;}
+    .contactsPage{ padding: 30px 0;}
+    .contactsPage__content{ flex-wrap: wrap;}
+    .contactsPage__form-wrap{ width: 100%; padding: 0;}
+    .contactsPage__sidebar{ width: 100%; padding: 0;}
+    .form-wrap__caption{ font-size: 18px; margin: 0 0 50px;}
+    .linkPageService__name-page{ font-size: 24px;}
+    .linkPageService__number{ margin: 0 25px 0 0;}
+    .linkPageService__content{ padding: 0 0 0 55px;}
+    .service-heading-about__caption{ font-size: 24px;}
+    .service-heading-about__content{ font-size: 18px;}
+    .heading-page--service .heading-page__content{ padding: 50px 0 0 0;}
+    .heading-page--service .back-service{ margin: 0 0 80px;}
+}
+@media(max-width: 1199px) {
+	.sliderMain__title{ font-size: 28px; margin: 0 0 25px;}
+    .sliderMain__text, .aboutMain__content, .more-link{ font-size: 16px;}
+    .header .phone-link::before, .header .phone-link::after{ display: none;}
+    .header .phone-link{ padding: 0; font-size: 16px;}
+    .phone-group{ margin: 0 0 0 20px;}
+    .header .nav__li{ font-size: 15px;}
+    .header__logo{ max-width: 175px;}
+    .aboutMain__caption, .trainingMain__caption{ font-size: 24px;}
+    .aboutMain__content .more-link{ margin-top: 50px;}
+    .aboutMain{ padding: 70px 0;}
+    .sliderMainWrap{ margin: 0 0 86px;}
+    .paralax, .paralaxImgWrap{ height: 260px;}
+    .paralaxLineRight::after, .paralaxLineLeft::after{ top: 10px; bottom: 10px; left: 45px; right: 45px;}
+    .paralaxLineRight, .paralaxLineLeft{ height: 80px;}
+    .paralaxLineGreen{ top: 40px; height: 40px;}
+    .paralaxLineLeft--green{ bottom: 140px;}
+    .title{ font-size: 42px; margin: 0 0 50px;}
+    .servicesMain{ padding: 15px 0 60px;}
+    .footer-line{ height: 80px; top: -80px;}
+    .footer-line::after{ top: 5px; bottom: 5px; right: 50px; height: auto; transform: inherit;}
+    .footer__link-group{ padding: 0 0 35px;}
+    .footer .nav__link{ padding: 0 0 0 105px; font-size: 22px; margin: 0 0 25px;}
+    footer{ padding: 40px 0 60px;}
+    .contacts-market__title{ font-size: 24px; margin: 0 0 35px;}
+    .contacts-market__content{ font-size: 16px;}
+    .contacts-market__map{ padding: 0 0 35px;}
+    .road-map-link{ padding: 0 0 3px 40px;}
+    .footer .social{ padding: 0 0 30px;}
+    .footer .nav__link::after{ width: 40px; height: 40px;}
+    .servicesMain__link{ font-size: 20px; padding: 25px 55px 25px 40px;}
+    .servicesMain__link::after, .servicesMain__link::before{ right: 20px; top: 20px; width: 25px; height: 25px;}
+    .servicesMain__count{ font-size: 16px;}
+    .aboutMain__caption{ padding: 0 30px 0 0;}
+    .aboutMain__content, .contacts-market, .trainingMain .title, .clientsMain .title,
+    .aboutUsMain__content{ padding: 0 0 0 30px;}
+    .aboutUsMain__content{ font-size: 18px;}
+    .aboutUsMain__name{ font-size: 25px;}
+    .aboutUsMain__post{ font-size: 16px;}
+    .aboutUsMain__info-detail{ font-size: 22px;}
+    .trainingMain__content{ padding: 0;}
+    .trainingMain__name{ font-size: 18px;}
+    .trainingMain__item{ font-size: 14px;}
+    .heading-page__title{ font-size: 32px;}
+    .nav-page__ul{ margin: 0 -10px;}
+    .nav-page__li{ padding: 0 10px 20px; font-size: 16px;}
+    .heading-page .container{ min-height: 480px;}
+    .aboutPage__text .row{ margin: 0 -10px;}
+    .aboutPage__text .row > div{ padding:0 10px;}
+    .aboutPage__caption, .galleryContent{ padding: 0 30px 0 0;}
+    .aboutPage__text{ padding: 0 0 0 30px; font-size: 16px;}
+    .aboutPage__caption, .direction_of_work__caption{ font-size: 22px;}
+    .our-principles .title, .direction_of_work .title, .galleryWrap .title{ padding: 0 0 0 30px;}
+    .spoilersItem__text{ padding: 0 45px; font-size: 18px;}
+    .spoilersItem__btn{ font-size: 22px;}
+    .spoilersItem__icon{ width: 40px; height: 40px;}
+    .galleryContent__video-wrap, .galleryContent--right, .direction_of_work__content{ padding: 0 0 0 30px;}
+    .galleryContent__title{ font-size: 24px; margin: 0 0 30px;}
+    .galleryContent__text{font-size: 16px;}
+    .galleryContent__play-btn{ width: 100px; height: 100px;}
+    .galleryContent__play-btn::after { left: 36px; border-width: 20px 0 20px 40px;}
+    .galleryItem{ padding: 30px 0 60px;}
+    .heading-page__content{ padding: 20px 0 15px;}
+    .heading-page__img-wrap{top: -70px;}
+    .direction_of_work__caption{ padding: 0 30px 25px 0;}
+    .page-section-item__title{ font-size: 38px;}
+    .page-section-item__holder{ padding-left: 45px; padding-top: 25px;}
+    .page-section-item__col:first-child .page-section-item__holder{ 
+        padding-right: 45px;
+    }
+    .page-section-item__caption{font-size: 22px; margin: 0 0 30px;}
+    .page-section-item__text{ font-size: 18px;}
+    .page-section-item__number-current{font-size: 115px;}
+    .page-section-item__name{ font-size: 14px;}
+    .page-section-item__number-all{ font-size: 14px;}
+    .list-info li{ font-size: 18px; padding: 0 0 0 45px;}
+    .list-info li::after{ width: 24px;}
+    .subtitle{ margin: 0 0 40px;}
+    .paralax--r_green::after{ width: 45%;}
+    .paralax--r_green::before{ width: 55%;}
+    .paralax--sm .paralaxLineRightWh{ height: 80px;}
+    .paralax--xs, .paralax--xs .paralaxImgWrap{ height: 200px;}
+    .paralax--xs .paralaxLineGreen{ top: 35px;}
+    .heading-page__text{ margin: 0 0 45px; font-size: 22px;}
+    .paralax--sm_two .paralaxLineRightWh{ height: 80px;}
+    .form-wrap__label{ font-size: 18px;}
+    .form-wrap__input{ font-size: 18px; height: 60px;}
+    .form-wrap__control{margin: 0 0 30px;}
+    .contactsPage__form-wrap .title{ font-size: 38px;}
+    .heading-page--service .back-service{ margin: 0 0 50px;}
+    .back-service{font-size: 16px; height: 50px;}
+    .back-service__label{ padding:0 0 0 35px;}
+    .anim-line-sm{ height: 60px;}
+    .heading-page--service .heading-page__content{ padding: 30px 0 0 0;}
+    .service-heading-about{ padding: 60px 0 0 0; margin: 0 0 60px;}
+    .service-heading-about::after{ height: 60px;}
+    .service-heading-about__item{ padding: 0 0 0 45px;}
+    .service-heading-about__item:first-child{ padding: 0 45px 0 0; min-height: 280px;}
+    .service-heading-about__content{ padding: 45px 0 0 0;}
+    .service-heading-about__caption{ font-size: 20px;}
+    .linkPageService__number-current{ font-size: 60px;}
+    .linkPageService__number-all{ font-size: 16px;}
+    .linkPageService__content::after, .linkPageService__content::before{
+        top: 2px;
+    }
+    .linkPageService__name-category{ font-size: 14px;}
+    .linkPageService__name-page{ font-size: 20px;}
+    .serviceSpoilers{ padding: 0 0 40px;}
+    .servicePageBot{padding-top: 70px;}
+    .serviceSpoilers .spoilersWrap{ margin: 0 0 60px;}
+}
+@media(max-width: 991px) {
+    body{ font-size: 16px;}
+	header{ padding: 30px 0; position: relative; z-index: 41; background-color: #fff;}
+    header:after{ content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; z-index: 60;}
+    .header .nav{ display: block; position: fixed; top: 99px; left: 0; right: 0; bottom: 0; z-index: 50; overflow-y: auto; overflow-x: hidden; transition: all ease .5s; transform: translateY(-150%);}
+    .header .nav.open{ transform: translateY(0);}
+    .header .nav__ul{ display: block; max-width: 720px; padding: 20px 15px; margin: 0 auto; background-color: #fff; position: relative;}
+    .header .nav__ul:after{ content: ""; position: absolute; top: 0; left: -4000px; right: -4000px; bottom: 0; background-color: #fff;}
+    .header .nav__li{ margin: 0 0 20px; display: block; font-size: 22px; position: relative; z-index: 2;}
+    .header .nav__li:first-child{margin: 0 0 20px;}
+    header .container{ align-items: center;}
+    .header__logo, .phone-group{ position: relative; z-index: 61;}
+    .sliderMainWrap .swiper-container{ padding-bottom: 20px;}
+    .sliderMainWrap{ margin: 0 0 65px;}
+    .menu-burger{ display: flex; position: relative; z-index: 61;}
+    .phone-group{ margin: 0 0 0 35px;}
+    .sliderMain__content{ width: 60%;}
+    .sliderMain__img{ width: 40%;}
+    .sliderMain__title{ font-size: 22px; margin: 0 0 20px;}
+    .sliderMain__text, .aboutMain__content, .more-link{ font-size: 14px;}
+    .aboutMain__caption{ font-size: 20px; padding: 0;}
+    .aboutMain{ padding: 40px 0;}
+    .sliderMainWrap .swiper-pagination-bullet,
+    .aboutUsSlider .swiper-pagination-bullet{ width: 40px;}
+    .aboutMain__content .more-link{ margin-top: 30px;}
+    .more-link{padding: 20px 50px 20px 20px;}
+    .aboutMain::after{ top: -20px; height: 20px;}
+    .aboutMain::before{ height: 30px; bottom: -30px;}
+    .servicesMain::after, .servicesMain::before{ height: 30px;}
+    .servicesMain::after{ top: -30px;}
+    .servicesMain::before{ bottom: -30px;}
+    .paralaxLineRight, .paralaxLineLeft{ height: 60px; bottom: 30px;}
+    .paralax, .paralaxImgWrap{ height: 170px;}
+    .title{ font-size: 34px; margin: 0 0 30px;}
+    .servicesMain__link{ font-size: 16px; padding: 20px 40px 20px 30px;}
+    .servicesMain__count{ font-size: 14px;}
+    .servicesMain__link::after, .servicesMain__link::before{ right: 10px; width: 20px; height: 20px;}
+    .paralaxLineGreen{ height: 20px; top: 20px;}
+    .paralaxLineLeft--green{ bottom: inherit; top: 20px;}
+    .trainingMain::after, .trainingMain::before{ height: 30px;}
+    .trainingMain::after{ top: -30px;}
+    .trainingMain::before{ bottom: -30px;}
+    .trainingMain__caption{ padding: 0; font-size: 20px; margin: 0 0 50px;}
+    .trainingMain__content{ padding: 0 0 0 30px;}
+    .trainingMain__name{ min-height: inherit;}
+    .subtitle{ font-size: 16px; margin: 0 0 30px;}
+    .paralaxLineRight--gray{ bottom: inherit; top: 30px;}
+    .clientsMain{ padding: 0 0 30px;}
+    .clientsMain::after{ height: 30px; top: -30px;}
+    .aboutUsMain__content{padding: 0; font-size: 14px;}
+    .aboutUsMain__info-detail{ font-size: 18px;}
+    .aboutUsMain__content p{ margin: 0 0 30px;}
+    .aboutUsMain__post{ font-size: 13px;}
+    .aboutUsMain__name{ font-size: 24px;}
+    .aboutUsMain{ padding: 0 0 40px;}
+    .footer-line{ height: 40px; top: -40px;}
+    .footer .nav__link{ font-size: 18px; padding: 0 0 0 55px; margin: 0 0 20px;}
+    .footer .nav__link::after{ width: 30px; height: 30px;}
+    .contacts-market{ padding: 0;}
+    .contacts-market__content{ font-size: 14px;}
+    .contacts-market__content p{ margin: 0 0 15px;}
+    .contacts-market__title{ font-size: 22px; margin: 0 0 25px;}
+    .footer .social{ padding: 0 0 15px;}
+    .contacts-market__map{ padding: 0 0 20px;}
+    .road-map-link{ align-items: center; min-height: 22px; padding: 0 0 0 25px;}
+    .road-map-link::after{ width: 15px; height: 22px;}
+    footer{ padding: 30px 0;}
+    .heading-page__title{ font-size: 24px;}
+    .nav-page__li{ width: 50%;}
+    .nav-page__li{ font-size: 14px;}
+    .heading-page .container{ min-height: 380px;}
+    .nav-page__count{ padding: 0 0 5px; margin: 0 0 5px;}
+    .anim-line .paralaxLineLeft--green{ top: inherit;}
+    .paralaxLineBotWh--r{ height: 30px;}
+    .spoilersItem__text{ padding: 0; width: 100%;}
+    .direction_of_work__item{ padding: 0 0 20px; font-size: 16px;}
+    .direction_of_work__caption{ min-height: inherit;}
+    .aboutPage__caption, .direction_of_work__caption{ font-size: 20px;}
+    .aboutPage{ padding: 45px 0 20px;}
+    .direction_of_work__name{ font-size: 16px;}
+    .galleryContent__title{ font-size: 20px;}
+    .galleryContent__text{ font-size: 14px;}
+    .galleryItem{ padding: 30px 0;}
+    .galleryContent, .galleryContent__video-wrap{ padding: 0;}
+    .page-section-item__title{ font-size: 26px;}
+    .paralax--sm .paralaxLinePattern{ display: none;}
+    .paralax--sm .paralaxLineLeft--green{ height: 60px; top: 30px;}
+    .paralax--sm .paralaxLineBotWh{ height: 30px;}
+    .paralax--sm .paralaxLineRightWh{ height: 50px; bottom: 30px;}
+    .page-section-item__caption{ font-size: 18px;}
+    .page-section-item__text{ font-size: 14px;}
+    .list-info li{ font-size: 16px;}
+    .paralax--xs .paralaxLineGreen{ top: 20px;}
+    .paralax--xs .paralaxLineDark--bot{ height: 40px;}
+    .paralax--xs, .paralax--xs .paralaxImgWrap{ height: 120px;}
+    .paralax--sm_two .paralaxLineLeft--green{ top: 0;}
+    .paralax--sm_two .paralaxLineRightWh{ height: 50px;}
+    .heading-page__text{ font-size: 18px; margin: 0 0 35px;}
+    .contactsPage{ padding: 20px 0 30px;}
+    .contactsPage__form-wrap .title{ font-size: 32px; margin: 0 0 30px;}
+    .form-wrap__caption{ font-size: 16px; margin: 0 0 30px;}
+    .form-wrap__label{ font-size: 16px; margin: 0 0 10px;}
+    .form-wrap__input{ font-size: 16px;}
+    .form-wrap .row{ margin: 0 -15px;}
+    .form-wrap .row > div{ padding: 0 15px;}
+    .service-pagination__btn{ width: 60px;}
+    .anim-line-sm{ height: 30px;}
+    .service-heading-about__caption{ font-size: 18px; padding: 0 0 25px;}
+    .service-heading-about__content{ font-size: 16px; padding: 25px 0 0 0;}
+    .service-heading-about::after{ height: 30px;}
+    .service-heading-about{ padding: 30px 0 0 0; margin: 0 0 30px;}
+    .back-service{ font-size: 14px; padding: 0 15px; height: 45px;}
+    .back-service__label::after{ width: 16px; height: 16px;}
+    .back-service__label{ padding: 0 0 0 25px;}
+    .heading-page--service .back-service{ margin: 0 0 30px;}
+    .service-pagination{ padding: 0 0 15px; margin: 0 0 25px;}
+    .page-section-item__number-current{ font-size: 90px;}
+    .linkPageService__name-category{ display: none;}
+    .linkPageService__name-page{ font-size: 16px;}
+    .linkPageService__number{ margin: 0 15px 0 0;}
+    .linkPageService__content::after, .linkPageService__content::before{
+        width: 26px;
+        height: 26px;
+    }
+    .servicePageBot__link{ padding: 25px 0 0 0;}
+    .linkPageService__content{ padding: 0 0 0 40px;}
+    .linkPageService__number-current{ font-size: 50px;}
+    .linkPageService__number-all{ font-size: 14px;}
+    .servicePageBot{ padding-top: 50px;}
+    .size-30{ font-size: 24px;}
+    .page-section-item__holder br{ display: none;}
+    .list-text-info{ font-size: 30px;}
+    .list-text-info p{ margin: 0 0 15px;}
+    .page-section-item__img{ margin: 0 0 50px;}
+}
+@media(max-width: 767px) {
+    .title{ font-size: 28px;}
+	.sliderMain__title{ font-size: 18px;}
+    .sliderMain__text{ font-size: 12px;}
+    .phone-group{ margin: 0 0 0 20px;}
+    .aboutMain__content{ padding: 30px 0 0 0;}
+    .more-link{ max-width: 60%;}
+    .servicesMain__link{ font-size: 14px;}
+    .trainingMain .title, .clientsMain .title{ padding: 0 0 0 15px;}
+    .trainingMain__content{ padding: 0;}
+    .aboutUsMain__post{ font-size: 11px; margin: 0 0 15px;}
+    .aboutUsSlider .swiper-wrapper{ padding: 0 0 30px;}
+    .aboutUsMain__content p{ margin: 0 0 20px;}
+    .aboutUsMain__info-detail{ font-size: 14px;}
+    .footer .nav__link::after{ width: 20px; height: 20px;}
+    .footer .nav__link{ padding: 0 0 0 35px;}
+    .contacts-market__title{ font-size: 18px; margin: 0 0 20px;}
+    .social{ margin: 0 -5px;}
+    .social__link{ margin: 0 5px 5px;}
+    .header .nav__ul{ max-width: 540px;}
+    .header .nav{ top: 95px;}
+    .heading-page__content{ max-width: 100%;}
+    .heading-page .container{ display: block; min-height: inherit;}
+    .heading-page__img-wrap{ display: none;}
+    .aboutPage__text, .direction_of_work__content{ padding: 0;}
+    .aboutPage__caption, .galleryContent{ padding: 0;}
+    .page-section-item__row{ flex-wrap: wrap;}
+    .page-section-item__col{ width: 100%;}
+    .border-item-top{ border-top: none;}
+    .page-section-item__heading{ border-bottom: 1px solid var(--black);}
+    .page-section-item__holder{ padding-top: 20px; padding-left: 0;}
+    .page-section-item__col:first-child .page-section-item__holder{ padding-right: 0;}
+    .page-section-item__title{ font-size: 24px; margin: 0 0 5px;}
+    .page-section-item__text{ padding: 0;}
+    .page-section-item--gray .page-section-item__heading{border-bottom-color: #fff;}
+    .page-section-item__number-current{ font-size: 90px;}
+    .page-section-item__number-all{ font-size: 14px;}
+    .page-section-item__name{ font-size: 14px;}
+    .page-section-item{ padding: 30px 0 40px;}
+    .heading-page__title br{ display: none;}
+    textarea.form-wrap__input{ height: 200px;}
+    .form-wrap__control .form-wrap__submit.more-link{ max-width: 100%;}
+    .contactsPage__form-wrap .title{ font-size: 26px;}
+    .form-wrap__caption{ font-size: 14px; margin: 0 0 20px;}
+    .form-wrap__control{ margin: 0 0 20px;}
+    .heading-page--service .heading-page__content{ max-width: 100%; padding: 20px 0 30px;}
+    .service-pagination .page-section-item__heading{ border-bottom: none;}
+    .service-heading-about__item{ width: 100%;}
+    .service-heading-about__items{ flex-wrap: wrap;}
+    .service-heading-about__item:first-child{ min-height: inherit;}
+    .service-heading-about__item:first-child::after{ width: auto; right: -4000px;}
+    .service-heading-about__caption{ position: relative; z-index: 2;}
+    .service-heading-about__item:first-child, .service-heading-about__item{ padding: 0;}
+    .service-heading-about{ margin: 0 0 10px;}
+    .linkPageService__content{ display: block;}
+    .linkPageService__number{ margin: 0 0 15px;}
+    .service-heading-about__content br{ display: none;}
+    .page-section-item__body--service{ padding-top: 15px;}
+    .page-section-item__number-sec{ margin: 0;}
+    .page-section-item__bottom--pad-t-lg{ padding-top: 0;}
+    .size-30{ font-size: 18px;}
+    .page-section-item--no_number{ padding: 0;}
+    .list-text-info{ font-size: 18px;}
+    .page-section-item__img{ margin: 0 0 25px;}
+    .page-section-item__bottom--pad-t_b{ padding: 10px 0 15px;}
+}
+@media(max-width: 576px) {
+	.menu-burger__icon{ width: 24px;}
+    .header__logo{ max-width: 155px;}
+    .menu-burger{ font-size: 14px;}
+    .sliderMain__text{ display: none;}
+    .sliderMainWrap .swiper-pagination,
+    .aboutUsSlider .swiper-pagination{ justify-content: center;}
+    .sliderMain__title{ font-size: 16px; margin: 0;}
+    .paralaxLineRight, .paralaxLineLeft, .paralaxLineGreen,
+    .footer-line, .footer .nav__link::after,
+    .paralaxLineDark--top, .paralaxLineDark--right,
+    .paralaxLinTopWh, .paralaxLineDark--top_r_sm, .paralaxLineBotWh--r{display: none;}
+    .paralax, .paralaxImgWrap{ height: 130px;}
+    .servicesMain__item{ width: 100%;}
+    .servicesMain__item:nth-child(2) .servicesMain__link{ border-top: none;}
+    .servicesMain__count{ font-size: 12px;}
+    .servicesMain__link{ font-size: 16px;}
+    .servicesMain, .trainingMain{ padding: 20px 0 30px;}
+    .trainingMain .title, .clientsMain .title{ padding: 0;}
+    .trainingMain::after{ right: inherit; left: 0;}
+    .trainingMain__caption{ font-size: 18px; margin: 0 0 30px;}
+    .clientsMain{ padding: 20px 0 30px;}
+    .footer .nav__link{ padding: 0; margin: 0 10px 10px; font-size: 16px;}
+    .footer .nav__ul{ display: flex; flex-wrap: wrap; justify-content: center; padding: 0 0 15px;}
+    .footer__link-group .email-link, .footer__link-group .phone-link{ margin: 0 15px 15px;}
+    .footer__link-group{ justify-content: center; padding: 0 0 20px; flex-wrap: wrap;}
+    .contacts-market{ text-align: center;}
+    .contacts-market__title{ font-size: 20px;}
+    .footer .social{ justify-content: center;}
+    .paralax-anim{ display: none;}
+    .aboutPage{ padding: 35px 0 20px;}
+    .our-principles .title, .direction_of_work .title, .galleryWrap .title{
+        padding: 0;
+    }
+    .spoilersItem__btn{ font-size: 18px; padding: 15px 35px 15px 0;}
+    .spoilersItem__icon{ width: 24px; height: 24px;}
+    .our-principles{ padding: 25px 0 40px;}
+    .spoilersItem__flex{ padding: 15px 0 0 0;}
+    .spoilersItem__text{font-size: 14px;}
+    .direction_of_work{ padding: 25px 0 20px;}
+    .more-link, a.more-link{ font-size: 16px; padding: 15px 40px 15px 15px;}
+    .slider-btn-next, .slider-btn-prev{ display: none;}
+    .heading-page__title{ font-size: 22px;}
+    .paralaxLineBotWh, .paralaxLinTopWh{ height: 30px;}
+    .aboutPage__caption, .direction_of_work__caption{ font-size: 18px;}
+    .galleryItem .galleryCarousel{ margin-top: 20px;}
+    .galleryContent__play-btn{ width: 70px; height: 70px;}
+    .galleryContent__play-btn::after{ left: 25px; border-width: 15px 0 15px 30px;}
+    .galleryItem__number{ font-size: 16px; margin: 0 0 15px;}
+    .galleryContent__title{ font-size: 18px; margin: 0 0 20px;}
+    .page-section-item__caption{ font-size: 16px;}
+    .page-section-item__title{ font-size: 20px;}
+    .list-info li{ font-size: 14px; margin: 0 0 10px; padding: 0 0 0 25px;}
+    .list-info li::after{ width: 12px; height: 1px; top: 8px;}
+    .paralax--xs .paralaxLineDark--bot{ display: none;}
+    .paralax--xs, .paralax--xs .paralaxImgWrap{ height: 100px;}
+    .paralax--sm_two .paralaxLineRightWh, .paralaxLineBotWh{ display: none;}
+    .page-section-item__name br{ display: none;}
+    .contactsPage__sidebar .social{ justify-content: center;}
+    .service-heading-about::after{ height: 25px;}
+    .service-heading-about{ padding: 25px 0 0 0;}
+    .linkPageService__number-current{ font-size: 40px;}
+    .linkPageService__name-page{ font-size: 14px;}
+    .serviceSpoilers{ padding: 0 0 20px;}
+    .servicePageBot{ padding-top: 30px;}
+    .serviceSpoilers .spoilersWrap{ margin: 0 0 30px;}
+    .size-30{ font-size: 16px;}
+    .list-text-info{ font-size: 16px; padding: 0 0 10px;}
+    .list-text-info p{ margin: 0 0 10px;}
+}
+@media(max-width: 450px) {
+    .Wrapper{ padding: 69px 0 0 0;}
+	header{ padding: 20px 0; position: fixed; top: 0; left: 0; width: 100%;}
+    .header .nav{ top: 68px;}
+    .sliderMainWrap{ margin: 0 0 45px;}
+    .header__logo{ max-width: 125px;}
+    .menu-burger__name{ display: none;}
+    .menu-burger__icon{ margin: 0;}
+    .header .nav__li{ font-size: 18px;}
+    .header .nav__li, .header .nav__li:first-child{ margin: 0 0 15px;}
+    .sliderMain__content{ width: 65%;}
+    .sliderMain__img{ width: 35%;}
+    .more-link{ max-width: 100%; padding: 15px 40px 15px 15px;}
+    .title{ font-size: 24px; margin: 0 0 20px;}
+    .aboutMain{padding: 20px 0;}
+    .sliderMainWrap .swiper-pagination-bullet, .aboutUsSlider .swiper-pagination-bullet{
+        width: 30px;
+    }
+    .heading-page__title{ font-size: 20px;}
+    .anchor{top: -65px;}
+}
+@media(max-width: 375px) {
+    .Wrapper{ padding: 65px 0 0 0;}
+	.header__logo{ max-width: 110px;}
+    .header .phone-link{ font-size: 14px;}
+    .phone-group{ margin: 0 0 0 10px;}
+    .header .nav{ top: 64px;}
+    .aboutMain__caption{ font-size: 18px;}
+    .paralax, .paralaxImgWrap{ height: 100px;}
+    .servicesMain::after, .servicesMain::before,
+    .trainingMain::after, .trainingMain::before{height: 20px;}
+    .servicesMain::before, .trainingMain::before{ bottom: -20px;}
+    .servicesMain::after, .trainingMain::after{ top: -20px;}
+    .aboutMain::before{ height: 20px; bottom: -20px;}
+    .clientsMain::after{ height: 20px; top: -20px;}
+    .anchor{top: -62px;}
+    .paralax--xs, .paralax--xs .paralaxImgWrap{ height: 80px;}
+    .page-section-item__number-current{ font-size: 80px;}
+    .heading-page__text{ font-size: 14px; margin: 0 0 25px;}
+    .form-wrap__input{ height: 50px; padding: 0 15px;}
+    textarea.form-wrap__input{ height: 160px; padding: 15px;}
+    .contactsPage__form-wrap .title{ font-size: 22px; margin: 0 0 20px;}
+    .form-wrap__label, .form-wrap__input{ font-size: 14px;}
+    .linkPageService__content::after, .linkPageService__content::before{ width: 16px; height: 16px;}
+    .linkPageService__content{ padding: 0 0 0 25px;}
+    .linkPageService__number-current{ font-size: 35px;}
+    .linkPageService__number-all{ font-size: 11px;}
+    .linkPageService__number{ margin: 0 0 10px;}
+    .linkPageService__name-page{ font-size: 12px; display: block;}
+    .servicePageBot__link{ padding: 15px 0 0 0;}
+}
+@media(max-width: 350px) {
+    .page-section-item__name, .page-section-item__number-all{ font-size: 12px;}
+    .page-section-item__number-all::before{ margin: 0 1px 0 0;}
+}
