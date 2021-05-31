@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="68e5f7f5-a1ff-470f-afa8-4127aa6a1ebb" name="mac.acroweb297.tmweb.ru" url="http://vh300.timeweb.ru">
+        <fileTransfer rootFolder="/public_html/" host="vh300.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
