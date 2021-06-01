@@ -48,6 +48,7 @@ $APPLICATION->SetTitle("Контакты");
                     <h1 class="title">Спасибо за ваш интерес <br>к нашей работе</h1>
                     <div class="form-wrap">
                         <div class="form-wrap__caption">Оставьте, пожалуйста, сообщение.<br>Мы будем рады ответить.</div>
+                        <?/*
                         <form method="" action="">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -87,8 +88,8 @@ $APPLICATION->SetTitle("Контакты");
                                 </div>
                             </div>
                         </form>
-                        <?/*
-                        $APPLICATION->IncludeComponent(
+                        */?>
+                        <?$APPLICATION->IncludeComponent(
                             "bitrix:main.feedback",
                             "contacts__feedback",
                             Array(
@@ -98,8 +99,7 @@ $APPLICATION->SetTitle("Контакты");
                                 "REQUIRED_FIELDS" => array("NAME","EMAIL"),
                                 "USE_CAPTCHA" => "Y"
                             )
-                        );
-                        */?>
+                        );?>
                     </div>
                 </div>
             </div>

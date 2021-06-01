@@ -1,7 +1,5 @@
 <?
 if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
-
-\Bitrix\Main\UI\Extension::load("ui.bootstrap4");
 /**
  * Bitrix vars
  *
@@ -12,6 +10,8 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
  * @global CUser $USER
  */
 ?>
+
+<?/*
 <div class="mb-4">
 	<?if(!empty($arResult["ERROR_MESSAGE"]))
 	{
@@ -76,3 +76,84 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 		<input type="submit" name="submit"  value="<?=GetMessage("MFT_SUBMIT")?>" class="btn btn-primary">
 	</form>
 </div>
+*/?>
+
+<!--//-->
+
+<? if(!empty($arResult["ERROR_MESSAGE"])) {
+    foreach($arResult["ERROR_MESSAGE"] as $v)
+        ShowError($v);
+}
+if($arResult["OK_MESSAGE"] <> '') { ?>
+    <div class="alert alert-success"><?=$arResult["OK_MESSAGE"]?></div>
+<? } ?>
+
+<form action="<?=POST_FORM_ACTION_URI?>" method="POST">
+    <?=bitrix_sessid_post()?>
+    <div class="row">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <label class="form-wrap__label">Ваше имя*</label>
+                <input
+                    class="form-wrap__input"
+                    id="mainFeedback_name"
+                    type="text"
+                    name="user_name"
+                    value="<?=$arResult["AUTHOR_NAME"]?>"
+                    <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])): ?>required<?endif?>
+                />
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <label class="form-wrap__label">Компания</label>
+                <input class="form-wrap__input" type="text" name=""/>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <label class="form-wrap__label">Email*</label>
+                <input
+                    class="form-wrap__input"
+                    id="mainFeedback_email"
+                    type="email"
+                    name="user_email"
+                    value="<?=$arResult["AUTHOR_EMAIL"]?>"
+                    <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>required<?endif?>
+                />
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <label class="form-wrap__label">Телефон*</label>
+                <input class="form-wrap__input phone" placeholder="+7 (___) ___-__-__" type="tel" name=""/>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <label class="form-wrap__label">Сообщение</label>
+                <textarea
+                    class="form-wrap__input"
+                    id="mainFeedback_message"
+                    name="MESSAGE"
+                ><?=$arResult["MESSAGE"]?></textarea>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-wrap__control">
+                <input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
+                <input class="form-wrap__submit more-link" type="submit" name="submit" value="<?=GetMessage("MFT_SUBMIT")?>">
+                <!--<button class="form-wrap__submit more-link" type="submit" name="submit">
+                    Отправить<br>сообщение
+                </button>-->
+            </div>
+        </div>
+
+    </div>
+</form>
