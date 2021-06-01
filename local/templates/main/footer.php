@@ -13,33 +13,28 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
                 <div class="row">
                     <div class="col-12 animUp _anim-items _anim-no-hide">
                         <div class="footer__link-group">
-                            <a href="#" class="email-link">Напишите нам</a>
+                            <a href="<?=SITE_DIR?>contacts/" class="email-link">Напишите нам</a>
                             <a href="tel:+74956200947" class="phone-link">+7 495 620 09 47</a>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 animUp _anim-items _anim-no-hide">
                         <nav class="nav">
-                            <ul class="nav__ul">
-                                <li class="nav__li">
-                                    <a href="<?=SITE_DIR?>" class="nav__link nav__link-anim nav__link--active">Главная страница</a>
-                                </li>
-                                <li class="nav__li">
-                                    <a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a>
-                                </li>
-                                <li class="nav__li">
-                                <? if (CSite::InDir(SITE_DIR.'index.php')): ?>
-                                    <a href="#servicesMain__anchor" class="nav__link nav__link-anim link-anchor">Услуги</a>
-                                <? else: ?>
-                                    <a href="<?=SITE_DIR?>#servicesMain__anchor" class="nav__link link-anchor-inner">Услуги</a>
-                                <? endif; ?>
-                                </li>
-                                <li class="nav__li">
-                                    <a href="<?=SITE_DIR?>training/" class="nav__link nav__link-anim">Тренинги Market Access</a>
-                                </li>
-                                <li class="nav__li">
-                                    <a href="<?=SITE_DIR?>projects/" class="nav__link nav__link-anim">Проекты</a>
-                                </li>
-                            </ul>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:menu",
+                                "navbar__footer",
+                                Array(
+                                    "ALLOW_MULTI_SELECT" => "N",
+                                    "CHILD_MENU_TYPE" => "top",
+                                    "DELAY" => "N",
+                                    "MAX_LEVEL" => "1",
+                                    "MENU_CACHE_GET_VARS" => array(""),
+                                    "MENU_CACHE_TIME" => "3600",
+                                    "MENU_CACHE_TYPE" => "A",
+                                    "MENU_CACHE_USE_GROUPS" => "Y",
+                                    "ROOT_MENU_TYPE" => "top",
+                                    "USE_EXT" => "N"
+                                )
+                            );?>
                         </nav>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 animUp _anim-items _anim-no-hide">

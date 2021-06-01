@@ -87,6 +87,19 @@ $APPLICATION->SetTitle("Контакты");
                                 </div>
                             </div>
                         </form>
+                        <?/*
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:main.feedback",
+                            "contacts__feedback",
+                            Array(
+                                "EMAIL_TO" => "example@mail.com",
+                                "EVENT_MESSAGE_ID" => array(),
+                                "OK_TEXT" => "Спасибо, ваше сообщение принято.",
+                                "REQUIRED_FIELDS" => array("NAME","EMAIL"),
+                                "USE_CAPTCHA" => "Y"
+                            )
+                        );
+                        */?>
                     </div>
                 </div>
             </div>
