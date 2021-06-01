@@ -8,6 +8,13 @@ $aMenuLinks = Array(
 		"" 
 	),
     Array(
+        "Услуги",
+        "/services/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
         "Тренинги Market Access",
         "/training/",
         Array(),

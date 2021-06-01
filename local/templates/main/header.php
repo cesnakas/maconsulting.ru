@@ -55,6 +55,24 @@ $asset = Asset::getInstance();
                 </div>
                 <div class="header__content">
                     <nav class="nav navMain-js">
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "navbar__header",
+                            Array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "top",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => array(""),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "ROOT_MENU_TYPE" => "top",
+                                "USE_EXT" => "N"
+                            )
+                        );?>
+                        <?/*
                         <ul class="nav__ul">
                             <li class="nav__li"><a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a></li>
                             <li class="nav__li">
@@ -68,6 +86,7 @@ $asset = Asset::getInstance();
                             <li class="nav__li"><a href="<?=SITE_DIR?>projects/" class="nav__link nav__link-anim">Проекты</a></li>
                             <li class="nav__li"><a href="<?=SITE_DIR?>contacts/" class="nav__link nav__link-anim">Контакты</a></li>
                         </ul>
+                        */?>
                     </nav>
                     <button class="menu-burger menu-burger-js">
                         <span class="menu-burger__name">Меню</span>
