@@ -27,7 +27,11 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
                                     <a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a>
                                 </li>
                                 <li class="nav__li">
-                                    <a data-goto="#servicesMain__anchor" href="#" class="nav__link nav__link--anchor">Услуги</a>
+                                <? if (CSite::InDir(SITE_DIR.'index.php')): ?>
+                                    <a href="#servicesMain__anchor" class="nav__link nav__link-anim link-anchor">Услуги</a>
+                                <? else: ?>
+                                    <a href="<?=SITE_DIR?>#servicesMain__anchor" class="nav__link link-anchor-inner">Услуги</a>
+                                <? endif; ?>
                                 </li>
                                 <li class="nav__li">
                                     <a href="<?=SITE_DIR?>training/" class="nav__link nav__link-anim">Тренинги Market Access</a>

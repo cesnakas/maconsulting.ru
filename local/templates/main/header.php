@@ -72,21 +72,7 @@ $asset = Asset::getInstance();
                                 "USE_EXT" => "N"
                             )
                         );?>
-                        <?/*
-                        <ul class="nav__ul">
-                            <li class="nav__li"><a href="<?=SITE_DIR?>about/" class="nav__link nav__link-anim">О Компании</a></li>
-                            <li class="nav__li">
-                                <? if (CSite::InDir(SITE_DIR.'index.php')): ?>
-                                <a href="#servicesMain__anchor" class="nav__link nav__link-anim link-anchor">Услуги</a>
-                                <? else: ?>
-                                <a href="<?=SITE_DIR?>#servicesMain__anchor" class="nav__link link-anchor-inner">Услуги</a>
-                                <? endif; ?>
-                            </li>
-                            <li class="nav__li"><a href="<?=SITE_DIR?>training/" class="nav__link nav__link-anim">Тренинги Market Access</a></li>
-                            <li class="nav__li"><a href="<?=SITE_DIR?>projects/" class="nav__link nav__link-anim">Проекты</a></li>
-                            <li class="nav__li"><a href="<?=SITE_DIR?>contacts/" class="nav__link nav__link-anim">Контакты</a></li>
-                        </ul>
-                        */?>
+
                     </nav>
                     <button class="menu-burger menu-burger-js">
                         <span class="menu-burger__name">Меню</span>
