@@ -64,13 +64,31 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="aboutMain__caption animUp _anim-items _anim-no-hide">Market Access Consulting – многопрофильная компания, специализирующаяся на разработке комплексных решений и проектов
-                        в области здравоохранения, оказывающая поддержку компаниям в трансформации жизни пациентов и достижении максимальных результатов для бизнеса.</div>
+                    <div class="aboutMain__caption animUp _anim-items _anim-no-hide">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/main__about-left.php"
+                            )
+                        );?>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="aboutMain__content animUp _anim-items _anim-no-hide">
-                        <p>Мы предоставляем услуги полного цикла, начиная от подготовки аналитических отчетов и сбора статистических данных по различным терапевтическим областям до разработки долгосрочных, эффективных стратегий.</p>
-                        <p>Мы повышаем доступность современных медицинских  технологий для пациентов, используя лучшие международные практики, знания и компетенции в области Market Access, сотрудничество с ключевыми экспертами системы здравоохранения,  а также наработанную репутацию.</p>
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/main__about-right.php"
+                            )
+                        );?>
                         <a href="<?=SITE_DIR?>about/" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>
                     </div>
                 </div>
