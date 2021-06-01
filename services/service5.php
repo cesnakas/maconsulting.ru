@@ -5,18 +5,18 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     <div class="heading-page heading-page--service">
         <div class="container">
             <div class="heading-page__content">
-                <a href="index.html#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
+                <a href="<?=SITE_DIR?>#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
                 <div class="service-pagination">
                     <div class="page-section-item__heading">
-                                <span class="page-section-item__number">
-                                    <span class="page-section-item__number-current">05</span>
-                                    <span class="page-section-item__number-all">08</span>
-                                </span>
+                        <span class="page-section-item__number">
+                            <span class="page-section-item__number-current">05</span>
+                            <span class="page-section-item__number-all">08</span>
+                        </span>
                         <span class="page-section-item__name">Наши услуги</span>
                     </div>
                     <div class="service-pagination__btn">
-                        <a href="service4.html" class="service-pagination__btn-prev nav__link-anim"></a>
-                        <a href="service6.html" class="service-pagination__btn-next nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service4/" class="service-pagination__btn-prev nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service6/" class="service-pagination__btn-next nav__link-anim"></a>
                     </div>
                 </div>
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">PR-технологии</h1>
@@ -24,7 +24,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="img/services/5.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/services/5.png" alt=""/>
                     </div>
                 </div>
             </div>
@@ -68,31 +68,31 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="servicePageBot animUp _anim-items _anim-no-hide">
                 <div class="servicePageBot__inner">
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">04</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Юридический консалтинг</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service4/">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">04</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Юридический консалтинг</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">06</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Стратегия доступа на рынок</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service6/">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">06</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Стратегия доступа на рынок</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/21.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/21.png" alt=""/>
         </div>
     </div>
 

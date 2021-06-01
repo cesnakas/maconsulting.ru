@@ -5,18 +5,18 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     <div class="heading-page heading-page--service">
         <div class="container">
             <div class="heading-page__content">
-                <a href="index.html#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
+                <a href="<?=SITE_DIR?>#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
                 <div class="service-pagination">
                     <div class="page-section-item__heading">
-                                <span class="page-section-item__number">
-                                    <span class="page-section-item__number-current">08</span>
-                                    <span class="page-section-item__number-all">08</span>
-                                </span>
+                        <span class="page-section-item__number">
+                            <span class="page-section-item__number-current">08</span>
+                            <span class="page-section-item__number-all">08</span>
+                        </span>
                         <span class="page-section-item__name">Наши услуги</span>
                     </div>
                     <div class="service-pagination__btn">
-                        <a href="service7.html" class="service-pagination__btn-prev nav__link-anim"></a>
-                        <a href="service1.html" class="service-pagination__btn-next nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service7/" class="service-pagination__btn-prev nav__link-anim"></a>
+                        <a href="<?=SITE_DIR?>service1/" class="service-pagination__btn-next nav__link-anim"></a>
                     </div>
                 </div>
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Организация конференций, семинаров</h1>
@@ -24,7 +24,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="img/services/8.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/services/8.png" alt=""/>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax paralax--xs">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/27.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/27.png" alt=""/>
         </div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
         <div class="paralaxLineGreen"></div>
@@ -124,7 +124,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax paralax--sm_two">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/28.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/28.png" alt=""/>
         </div>
         <div class="paralaxLineBotWh"></div>
         <div class="paralaxLineRightWh"></div>
@@ -158,7 +158,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                     </div>
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder border-item-top">
-                            <img class="page-section-item__img" src="img/service-img-text.png" alt=""/>
+                            <img class="page-section-item__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/service-img-text.png" alt=""/>
                             <div class="page-section-item__text">
                                 <p>Оценка технологий здравоохранения (далее - ОТЗ) – система, позволяющая объективно оценить данные о медицинских вмешательствах, применяемая в большинстве стран мира. Основной ее целью является научно-обоснованная поддержка принятия решений в сфере здравоохранения, в том числе, в вопросах о включении в клинические рекомендации медицинских вмешательств (среди которых следует выделить инновационные технологии), повышении качества медицинской помощи, финансировании дорогостоящих технологий и оптимизации затрат для рационального использования бюджетных средств. </p>
                                 <p>Под технологиями в здравоохранении понимаются все методы диагностики, лечения, профилактики и реабилитации, включая лекарственные препараты и медицинские изделия, вакцины, медицинские и хирургические процедуры, а также любые другие мероприятия для охраны и поддержания здоровья человека.</p>
@@ -177,32 +177,32 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="servicePageBot animUp _anim-items _anim-no-hide">
                 <div class="servicePageBot__inner">
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">07</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Мониторинг и аналитика</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service7">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">07</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Мониторинг и аналитика</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                     <div class="servicePageBot__item">
-                        <a class="servicePageBot__link linkPageService">
-                                    <span class="linkPageService__content">
-                                        <span class="linkPageService__number">
-                                            <span class="linkPageService__number-current">01</span>
-                                            <span class="linkPageService__number-all">08</span>
-                                        </span>
-                                        <span class="linkPageService__text">
-                                            <span class="linkPageService__name-category">Наши услуги</span>
-                                            <span class="linkPageService__name-page">Анализ организации медицинской помощи, сбор информации
-                                                и аналитика</span>
-                                        </span>
-                                    </span>
+                        <a class="servicePageBot__link linkPageService" href="<?=SITE_DIR?>service1/">
+                            <span class="linkPageService__content">
+                                <span class="linkPageService__number">
+                                    <span class="linkPageService__number-current">01</span>
+                                    <span class="linkPageService__number-all">08</span>
+                                </span>
+                                <span class="linkPageService__text">
+                                    <span class="linkPageService__name-category">Наши услуги</span>
+                                    <span class="linkPageService__name-page">Анализ организации медицинской помощи, сбор информации
+                                        и аналитика</span>
+                                </span>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="img/bg/26.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/26.png" alt=""/>
         </div>
     </div>
 
