@@ -14,15 +14,46 @@ $APPLICATION->SetTitle("Контакты");
                         <h2 class="contacts-market__title">Market Acces Consulting</h2>
                         <div class="row">
                             <div class="col-12">
-                                <p>123060, г. Москва,<br>ул. Расплетина, д.24, офис 203</p>
+                                <? // <p>123060, г. Москва,<br>ул. Расплетина, д.24, офис 203</p>
+                                $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "inc",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/include/footer__address.php"
+                                    )
+                                );?>
                             </div>
                             <div class="col-12">
-                                <p>Рабочий график:<br>ПН–ПТ  10:00 - 19:00</p>
+                                <? // <p>Рабочий график:<br>ПН–ПТ  10:00 - 19:00</p>
+                                $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_SUFFIX" => "inc",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/include/footer__working-schedule.php"
+                                    )
+                                );?>
                             </div>
                             <div class="col-12">
                                 <p>
-                                    <a class="phone-link-def" href="tel:">+7 495 620-09-47</a><br>
-                                    <a class="email-link-def" href="mailto:info@maconsulting.ru">info@maconsulting.ru</a>
+                                    <?
+                                    // <a class="phone-link-def" href="tel:+74956200947">+7 495 620-09-47</a><br>
+                                    // <a class="email-link-def" href="mailto:info@maconsulting.ru">info@maconsulting.ru</a>
+                                    $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/footer__phone-email.php"
+                                        )
+                                    );?>
                                 </p>
                             </div>
                             <div class="col-12">
@@ -32,13 +63,24 @@ $APPLICATION->SetTitle("Контакты");
                             </div>
                             <div class="col-12">
                                 <div class="social">
-                                    <a href="#" class="social__link icon-facebook"></a>
-                                    <a href="#" class="social__link icon-linkedin"></a>
-                                    <a href="#" class="social__link icon-twitter"></a>
-                                    <a href="#" class="social__link icon-youtube-play"></a>
-                                    <!--a href="#" class="social__link icon-instagram"></a>
-                                    <a href="#" class="social__link icon-vkontakte"></a>
-                                    <a href="#" class="social__link icon-whatsapp"></a-->
+                                    <?
+                                    // <a href="#" class="social__link icon-facebook"></a>
+                                    // <a href="#" class="social__link icon-linkedin"></a>
+                                    // <a href="#" class="social__link icon-twitter"></a>
+                                    // <a href="#" class="social__link icon-youtube-play"></a>
+                                    // <!--a href="#" class="social__link icon-instagram"></a>
+                                    // <a href="#" class="social__link icon-vkontakte"></a>
+                                    // <a href="#" class="social__link icon-whatsapp"></a-->
+                                    $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/footer__social.php"
+                                        )
+                                    );?>
                                 </div>
                             </div>
                         </div>
@@ -48,47 +90,6 @@ $APPLICATION->SetTitle("Контакты");
                     <h1 class="title">Спасибо за ваш интерес <br>к нашей работе</h1>
                     <div class="form-wrap">
                         <div class="form-wrap__caption">Оставьте, пожалуйста, сообщение.<br>Мы будем рады ответить.</div>
-                        <?/*
-                        <form method="" action="">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <label class="form-wrap__label">Ваше имя*</label>
-                                        <input class="form-wrap__input" type="text" name=""/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <label class="form-wrap__label">Компания</label>
-                                        <input class="form-wrap__input" type="text" name=""/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <label class="form-wrap__label">Email*</label>
-                                        <input class="form-wrap__input" type="email" name=""/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <label class="form-wrap__label">Телефон*</label>
-                                        <input class="form-wrap__input phone" placeholder="+7 (___) ___-__-__" type="tel" name=""/>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <label class="form-wrap__label">Сообщение</label>
-                                        <textarea class="form-wrap__input"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-wrap__control">
-                                        <button class="form-wrap__submit more-link" type="submit">Отправить<br>сообщение</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        */?>
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:main.feedback",
                             "contacts__feedback",
