@@ -81,7 +81,17 @@ $asset = Asset::getInstance();
                         </span>
                     </button>
                     <div class="phone-group">
-                        <a href="tel:+74956200947" class="phone-link">+7 495 620 09 47</a>
+                        <? // <a href="tel:" class="phone-link"></a>
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/header__phone.php"
+                            )
+                        );?>
                     </div>
                 </div>
             </div>
