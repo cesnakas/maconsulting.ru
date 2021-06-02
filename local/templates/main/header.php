@@ -89,7 +89,7 @@ $asset = Asset::getInstance();
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "inc",
                                 "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/header__phone.php"
+                                "PATH" => "/include/phone__header-footer.php"
                             )
                         );?>
                     </div>
