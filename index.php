@@ -227,42 +227,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 </div>
             </div>
         </div>
-        <?/*
-        <div class="swiper-container clientsSlider clientsSlider-js animUp _anim-items _anim-no-hide">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/1.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/2.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/3.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/4.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/5.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="clients-slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/clients/6.png" alt=""/>
-                    </a>
-                </div>
-            </div>
-        </div>
-        */?>
         <?$APPLICATION->IncludeComponent(
             "bitrix:photo.section",
             "slider__clients",
