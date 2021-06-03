@@ -61,61 +61,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "STRICT_SECTION_CHECK" => "N"
                 )
             );?>
-            <?/*
-            <div class="swiper-container sliderMain-js">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sliderMain__holder">
-                            <div class="sliderMain__content">
-                                <h2 class="sliderMain__title">>10 лет обеспечиваем
-                                    фармацевтическую отрасль услугами
-                                    Market Access
-                                    полного цикла</h2>
-                                <div class="sliderMain__text">Уникальный опыт в разработке и реализации Market Access и GR стратегий. Услуги полного цикла, начиная от подготовки аналитических отчетов и сбора статистических данных по различным терапевтическим областям до разработки долгосрочных, эффективных стратегий</div>
-                            </div>
-                            <div class="sliderMain__img">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/1.png" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sliderMain__holder">
-                            <div class="sliderMain__content">
-                                <h2 class="sliderMain__title">Выстраиваем структурированный подход по работе
-                                    с ключевыми стейкхолдерами</h2>
-                                <div class="sliderMain__text">Сотрудничаем с ключевыми экспертами системы здравоохранения, представителями медицинского сообщества, общественными организациями и др.</div>
-                            </div>
-                            <div class="sliderMain__img">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/2.png" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sliderMain__holder">
-                            <div class="sliderMain__content">
-                                <h2 class="sliderMain__title">Создаем авторские образовательные программы и организуем корпоративные тренинги в области market access</h2>
-                                <div class="sliderMain__text">Более 50 компетентных и профессиональных тренеров, а также уже более 1000 подготовленных специалистов</div>
-                            </div>
-                            <div class="sliderMain__img">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/3.png" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sliderMain__holder">
-                            <div class="sliderMain__content">
-                                <h2 class="sliderMain__title">Работаем с мировыми фармацевтическими компаниями</h2>
-                                <div class="sliderMain__text">Используя лучшие международные практики, знания и компетенции, повышаем доступность современных медицинских  технологий для пациентов.</div>
-                            </div>
-                            <div class="sliderMain__img">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/slide/4.png" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            */?>
         </div>
     </div>
 
@@ -342,83 +287,63 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     <h3 class="subtitle subtitle--black animUp _anim-items _anim-no-hide">О нас говорят</h3>
                 </div>
             </div>
-            <div class="swiper-container aboutUsSlider aboutUsSlider-js animUp _anim-items _anim-no-hide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__name" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Стрельцов Александр</div>
-                                <div class="aboutUsMain__post" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".5s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Директор по работе с государственными учреждениями.<br>
-                                    Представительство АО «Санофи-авентис групп»</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__content" data-swiper-animation="animate__fadeInRight" data-duration="1s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutRight"
-                                     data-out-duration=".9s">
-                                    <p>На протяжении нескольких лет наша компания плодотворно сотрудничает с агентством Market Access Consulting. Все поставленные цели наших проектов были достигнуты в обозначенные сроки и с высоким уровнем исполнения. </p>
-                                    <div class="aboutUsMain__info-detail">Отдельно хочется отметить опыт сотрудников Market Access Consulting в исследовательской, организаторской и консалтинговой деятельности, а также в PR-сопровождении проектов.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__name" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Стрельцов Александр</div>
-                                <div class="aboutUsMain__post" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".5s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Директор по работе с государственными учреждениями.<br>
-                                    Представительство АО «Санофи-авентис групп»</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__content" data-swiper-animation="animate__fadeInRight" data-duration="1s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutRight"
-                                     data-out-duration=".9s">
-                                    <p>На протяжении нескольких лет наша компания плодотворно сотрудничает с агентством Market Access Consulting. Все поставленные цели наших проектов были достигнуты в обозначенные сроки и с высоким уровнем исполнения. </p>
-                                    <div class="aboutUsMain__info-detail">Отдельно хочется отметить опыт сотрудников Market Access Consulting в исследовательской, организаторской и консалтинговой деятельности, а также в PR-сопровождении проектов.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__name" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Стрельцов Александр</div>
-                                <div class="aboutUsMain__post" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".5s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Директор по работе с государственными учреждениями.<br>
-                                    Представительство АО «Санофи-авентис групп»</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__content" data-swiper-animation="animate__fadeInRight" data-duration="1s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutRight"
-                                     data-out-duration=".9s">
-                                    <p>На протяжении нескольких лет наша компания плодотворно сотрудничает с агентством Market Access Consulting. Все поставленные цели наших проектов были достигнуты в обозначенные сроки и с высоким уровнем исполнения. </p>
-                                    <div class="aboutUsMain__info-detail">Отдельно хочется отметить опыт сотрудников Market Access Consulting в исследовательской, организаторской и консалтинговой деятельности, а также в PR-сопровождении проектов.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__name" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Стрельцов Александр</div>
-                                <div class="aboutUsMain__post" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".5s" data-swiper-out-animation="animate__fadeOutDown"
-                                     data-out-duration=".7s">Директор по работе с государственными учреждениями.<br>
-                                    Представительство АО «Санофи-авентис групп»</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aboutUsMain__content" data-swiper-animation="animate__fadeInRight" data-duration="1s" data-delay=".3s" data-swiper-out-animation="animate__fadeOutRight"
-                                     data-out-duration=".9s">
-                                    <p>На протяжении нескольких лет наша компания плодотворно сотрудничает с агентством Market Access Consulting. Все поставленные цели наших проектов были достигнуты в обозначенные сроки и с высоким уровнем исполнения. </p>
-                                    <div class="aboutUsMain__info-detail">Отдельно хочется отметить опыт сотрудников Market Access Consulting в исследовательской, организаторской и консалтинговой деятельности, а также в PR-сопровождении проектов.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:news.list",
+                "main__reviews",
+                Array(
+                    "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                    "ADD_SECTIONS_CHAIN" => "N",
+                    "AJAX_MODE" => "N",
+                    "AJAX_OPTION_ADDITIONAL" => "",
+                    "AJAX_OPTION_HISTORY" => "N",
+                    "AJAX_OPTION_JUMP" => "N",
+                    "AJAX_OPTION_STYLE" => "N",
+                    "CACHE_FILTER" => "N",
+                    "CACHE_GROUPS" => "Y",
+                    "CACHE_TIME" => "36000000",
+                    "CACHE_TYPE" => "A",
+                    "CHECK_DATES" => "Y",
+                    "DETAIL_URL" => "",
+                    "DISPLAY_BOTTOM_PAGER" => "N",
+                    "DISPLAY_DATE" => "N",
+                    "DISPLAY_NAME" => "Y",
+                    "DISPLAY_PICTURE" => "Y",
+                    "DISPLAY_PREVIEW_TEXT" => "Y",
+                    "DISPLAY_TOP_PAGER" => "N",
+                    "FIELD_CODE" => array("",""),
+                    "FILTER_NAME" => "",
+                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                    "IBLOCK_ID" => "3",
+                    "IBLOCK_TYPE" => "sliders",
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                    "INCLUDE_SUBSECTIONS" => "Y",
+                    "MESSAGE_404" => "",
+                    "NEWS_COUNT" => "20",
+                    "PAGER_BASE_LINK_ENABLE" => "N",
+                    "PAGER_DESC_NUMBERING" => "N",
+                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                    "PAGER_SHOW_ALL" => "N",
+                    "PAGER_SHOW_ALWAYS" => "N",
+                    "PAGER_TEMPLATE" => ".default",
+                    "PAGER_TITLE" => "Новости",
+                    "PARENT_SECTION" => "",
+                    "PARENT_SECTION_CODE" => "",
+                    "PREVIEW_TRUNCATE_LEN" => "",
+                    "PROPERTY_CODE" => array("REVIEW_POST","REVIEW_COMPANY","REVIEW_DETAIL",""),
+                    "SET_BROWSER_TITLE" => "N",
+                    "SET_LAST_MODIFIED" => "N",
+                    "SET_META_DESCRIPTION" => "N",
+                    "SET_META_KEYWORDS" => "N",
+                    "SET_STATUS_404" => "N",
+                    "SET_TITLE" => "N",
+                    "SHOW_404" => "N",
+                    "SORT_BY1" => "ID",
+                    "SORT_BY2" => "ID",
+                    "SORT_ORDER1" => "ASC",
+                    "SORT_ORDER2" => "ASC",
+                    "STRICT_SECTION_CHECK" => "N"
+                )
+            );?>
         </div>
     </div>
 
