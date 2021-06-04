@@ -64,18 +64,45 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 <h2 class="subtitle">О компании</h2>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h3 class="aboutPage__caption">Founded in 1991, Market Access Consulting is an industry-leading manufacturer of advanced optical fiber and copper structured cabling systems. We are proud of our 30 year history of continuous growth driven by our commitment to real customer satisfaction. From humble beginnings, we now serve customers throughout the Americas, and their projects around the world.</h3>
+                        <h3 class="aboutPage__caption">
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/include/about__about-left.php"
+                                )
+                            );?>
+                        </h3>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="aboutPage__text">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <p>Другими словами, нежели на главной странице, говорим о том, какие услуги мы предоставляем + тут же о проведении конференций….</p>
-                                    <p>Мы предоставляем услуги полного цикла, начиная от подготовки аналитических отчетов и сбора статистических данных по различным терапевтическим областям до разработки долгосрочных, эффективных стратегий.</p>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/about__about-right-col_1.php"
+                                        )
+                                    );?>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <p>Другими словами, нежели на главной странице, говорим о том, что мы предлагаем в плане образовательных программ……</p>
-                                    <p>Мы эксперты по разработке авторских образовательных программ и организации корпоративных тренингов, посвященных продвижению медицинских технологий на рынок государственного финансирования.</p>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/about__about-right-col_2.php"
+                                        )
+                                    );?>
                                 </div>
                             </div>
                         </div>
