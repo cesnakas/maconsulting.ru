@@ -51,10 +51,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
             <div class="container">
                 <div class="page-section-item__heading">
-                            <span class="page-section-item__number">
-                                <span class="page-section-item__number-current">01</span>
-                                <span class="page-section-item__number-all">02</span>
-                            </span>
+                    <span class="page-section-item__number">
+                        <span class="page-section-item__number-current">01</span>
+                        <span class="page-section-item__number-all">02</span>
+                    </span>
                     <span class="page-section-item__name">Тренинги <br>Market Access</span>
                 </div>
                 <div class="page-section-item__body">
@@ -154,10 +154,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
             <div class="container">
                 <div class="page-section-item__heading">
-                            <span class="page-section-item__number">
-                                <span class="page-section-item__number-current">02</span>
-                                <span class="page-section-item__number-all">02</span>
-                            </span>
+                    <span class="page-section-item__number">
+                        <span class="page-section-item__number-current">02</span>
+                        <span class="page-section-item__number-all">02</span>
+                    </span>
                     <span class="page-section-item__name">Тренинги <br>Market Access</span>
                 </div>
                 <div class="page-section-item__body">
