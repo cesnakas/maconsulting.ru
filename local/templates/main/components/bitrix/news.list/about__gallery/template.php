@@ -19,7 +19,7 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
 ?>
 
 <div class="col-12">
-    <?foreach($arResult["ITEMS"] as $key => $arItem):?>
+<?foreach($arResult["ITEMS"] as $arItem):?>
     <?
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
@@ -28,45 +28,62 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
         <div class="row">
 
             <div class="col-12">
-                <div class="galleryItem__number">02</div>
+            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                <div class="galleryItem__number">
+                <?if(!empty($pid == "LEFT_NUMBER")):?>
+                    <?=$arProperty["DISPLAY_VALUE"];?>
+                <?endif;?>
+                </div>
+            <?endforeach;?>
             </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
                 <div class="galleryContent">
-                    <?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
+                    <?if(!empty($pid == "LEFT_TITLE")):?>
                     <div class="galleryContent__title">
-                        <?=$arItem["NAME"]?>
+                        <?=$arProperty["DISPLAY_VALUE"];?>
                     </div>
                     <?endif;?>
-                    <?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
+                    <?if(!empty($pid == "LEFT_TEXT")):?>
                     <div class="galleryContent__text">
-                        <p><?=$arItem["PREVIEW_TEXT"];?></p>
+                        <p><?=$arProperty["DISPLAY_VALUE"];?></p>
                     </div>
                     <?endif;?>
                 </div>
+            <?endforeach;?>
             </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <!-- if video -->
+            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+
+                <?if(!empty($pid == "RIGHT_VIDEO")):?>
                 <div class="galleryContent__video-wrap">
-                    <a href="#" class="galleryContent__video">
-                        <img class="galleryContent__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img2.png" alt=""/>
+                    <a href="#<?/*=$arItem["DETAIL_PAGE_URL"]*/?>" class="galleryContent__video">
+                        <img
+                            class="galleryContent__img"
+                            src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img2.png"
+                            <?/*
+                            src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
+                            */?>
+                            alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+                            title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                        />
                         <span class="galleryContent__play-btn"></span>
                     </a>
                 </div>
-                <!-- /if video -->
-
-                <!-- if text right -->
                 <br>
+                <?endif;?>
+                
+                <?if(!empty($pid == "RIGHT_TEXT")):?>
                 <div class="galleryContent galleryContent--right">
-                    <?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
                     <div class="galleryContent__text">
-                        <p><?=$arItem["PREVIEW_TEXT"];?></p>
+                        <p><?=$arProperty["DISPLAY_VALUE"];?></p>
                     </div>
-                    <?endif;?>
                 </div>
-                <!-- /if text right -->
+                <?endif;?>
 
+            <?endforeach;?>
             </div>
 
         </div>
@@ -101,12 +118,13 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
         <!-- /if slider -->
 
     </div>
-    <?endforeach;?>
+<?endforeach;?>
 </div>
 
 <!--//-->
+<?/*
 
-<div class="col-12 <?=$themeClass?>">
+<div class="col-12">
 	<div class="col">
 
         <?foreach($arResult["ITEMS"] as $arItem):?>
@@ -423,3 +441,5 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
 
 	</div>
 </div>
+
+*/?>
