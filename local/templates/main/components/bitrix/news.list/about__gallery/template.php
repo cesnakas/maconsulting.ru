@@ -11,59 +11,67 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-$themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_THEME'] : '';
+
+use Bitrix\Main\Page\Asset;
+// fancybox
+Asset::getInstance()->addCss('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
+Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js');
 ?>
 
 <div class="col-12">
-
-    <div class="galleryItem animUp _anim-items _anim-no-hide">
+    <?foreach($arResult["ITEMS"] as $key => $arItem):?>
+    <?
+    $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+    $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+    ?>
+    <div class="galleryItem animUp _anim-items _anim-no-hide" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
         <div class="row">
-            <div class="col-12">
-                <div class="galleryItem__number">01</div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="galleryContent">
-                    <div class="galleryContent__title">Тренинг по Мarket Аccess:<br>
-                        «Основные положения доступа на рынок новых ЛС. Нормативно-правовое регулирование»</div>
-                    <div class="galleryContent__text">
-                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="galleryContent__video-wrap">
-                    <a href="#" class="galleryContent__video">
-                        <img class="galleryContent__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img1.png" alt=""/>
-                        <span class="galleryContent__play-btn"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="galleryItem animUp _anim-items _anim-no-hide">
-        <div class="row">
             <div class="col-12">
                 <div class="galleryItem__number">02</div>
             </div>
+
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <div class="galleryContent">
-                    <div class="galleryContent__title">Тренинг для журналистов:<br>
-                        «Инновации в российском здравоохранении. Особенности освещения в СМИ»</div>
-                    <div class="galleryContent__text">
-                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
+                    <?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
+                    <div class="galleryContent__title">
+                        <?=$arItem["NAME"]?>
                     </div>
+                    <?endif;?>
+                    <?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
+                    <div class="galleryContent__text">
+                        <p><?=$arItem["PREVIEW_TEXT"];?></p>
+                    </div>
+                    <?endif;?>
                 </div>
             </div>
+
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <!-- if video -->
                 <div class="galleryContent__video-wrap">
                     <a href="#" class="galleryContent__video">
                         <img class="galleryContent__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img2.png" alt=""/>
                         <span class="galleryContent__play-btn"></span>
                     </a>
                 </div>
+                <!-- /if video -->
+
+                <!-- if text right -->
+                <br>
+                <div class="galleryContent galleryContent--right">
+                    <?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
+                    <div class="galleryContent__text">
+                        <p><?=$arItem["PREVIEW_TEXT"];?></p>
+                    </div>
+                    <?endif;?>
+                </div>
+                <!-- /if text right -->
+
             </div>
+
         </div>
+
+        <!-- if slider -->
         <div class="swiper-container galleryCarousel galleryCarousel-js">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -90,56 +98,10 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
             <div class="slider-btn slider-btn-next"></div>
             <div class="slider-btn slider-btn-prev"></div>
         </div>
+        <!-- /if slider -->
+
     </div>
-
-    <div class="galleryItem animUp _anim-items _anim-no-hide">
-        <div class="row">
-            <div class="col-12">
-                <div class="galleryItem__number">03</div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="galleryContent">
-                    <div class="galleryContent__title">Тренинг для журналистов:<br>
-                        «Инновации в российском здравоохранении. Особенности освещения в СМИ»</div>
-
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="galleryContent galleryContent--right">
-                    <div class="galleryContent__text">
-                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-container galleryCarousel galleryCarousel-js">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/5.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/5.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/6.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/6.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/7.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/7.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/8.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/8.png" alt=""/>
-                    </a>
-                </div>
-            </div>
-            <div class="slider-btn slider-btn-next"></div>
-            <div class="slider-btn slider-btn-prev"></div>
-        </div>
-    </div>
-
+    <?endforeach;?>
 </div>
 
 <!--//-->
