@@ -58,7 +58,7 @@ $APPLICATION->SetTitle("");
                         "PARENT_SECTION" => "",
                         "PARENT_SECTION_CODE" => "",
                         "PREVIEW_TRUNCATE_LEN" => "",
-                        "PROPERTY_CODE" => array("LEFT_NUMBER", "LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT"),
+                        "PROPERTY_CODE" => array("LEFT_NUMBER", "LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT", "BOTTOM_SLIDER", "MORE_PHOTOS"),
                         "SEARCH_PAGE" => "/search/",
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",
