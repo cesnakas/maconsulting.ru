@@ -7,28 +7,40 @@ $APPLICATION->SetTitle("Проекты");
         <div class="container">
             <div class="heading-page__content">
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Наши<br> проекты</h1>
-                <div class="heading-page__text animUp _anim-items _anim-no-hide">Несколько примеров успешно реализованных стратегий по совершенствованию оказания медицинской помощи больным. </div>
+                <div class="heading-page__text animUp _anim-items _anim-no-hide">
+                    <?
+                    // Несколько примеров успешно реализованных стратегий по совершенствованию оказания медицинской помощи больным.
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/projects__subtitle.php"
+                        )
+                    );?>
+                </div>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
-                    <ul class="nav-page__ul">
-                        <li class="nav-page__li">
-                            <a href="#page1" class="nav-page__link link-anchor">
-                                <span class="nav-page__count">01</span>
-                                <span class="nav-page__name">Воспалительные заболевания кишечника</span>
-                            </a>
-                        </li>
-                        <li class="nav-page__li">
-                            <a href="#page2" class="nav-page__link link-anchor">
-                                <span class="nav-page__count">02</span>
-                                <span class="nav-page__name">Сердечно-сосудистые заболевания</span>
-                            </a>
-                        </li>
-                        <li class="nav-page__li">
-                            <a href="#page3" class="nav-page__link link-anchor">
-                                <span class="nav-page__count">03</span>
-                                <span class="nav-page__name">Орфанные заболевания</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:news.line",
+                        "projects_nav",
+                        Array(
+                            "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "300",
+                            "CACHE_TYPE" => "A",
+                            "DETAIL_URL" => "#page#ELEMENT_ID#",
+                            "FIELD_CODE" => array("ID","CODE",""),
+                            "IBLOCKS" => array("6"),
+                            "IBLOCK_TYPE" => "projects",
+                            "NEWS_COUNT" => "20",
+                            "SORT_BY1" => "ID",
+                            "SORT_BY2" => "ID",
+                            "SORT_ORDER1" => "ASC",
+                            "SORT_ORDER2" => "ASC"
+                        )
+                    );?>
                 </nav>
             </div>
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
@@ -55,14 +67,14 @@ $APPLICATION->SetTitle("Проекты");
     </div>
 
     <div class="page-section-item">
-        <div class="anchor" id="page1"></div>
+        <div class="anchor" id="page22"></div>
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
             <div class="container">
                 <div class="page-section-item__heading">
-                            <span class="page-section-item__number">
-                                <span class="page-section-item__number-current">01</span>
-                                <span class="page-section-item__number-all">03</span>
-                            </span>
+                    <span class="page-section-item__number">
+                        <span class="page-section-item__number-current">01</span>
+                        <span class="page-section-item__number-all">03</span>
+                    </span>
                     <span class="page-section-item__name">Примеры <br>реализованных <br>проектов</span>
                 </div>
                 <div class="page-section-item__body">
@@ -87,7 +99,6 @@ $APPLICATION->SetTitle("Проекты");
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="paralax paralax--xs">
@@ -100,14 +111,14 @@ $APPLICATION->SetTitle("Проекты");
     </div>
 
     <div class="page-section-item page-section-item--gray">
-        <div class="anchor" id="page2"></div>
+        <div class="anchor" id="page23"></div>
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
             <div class="container">
                 <div class="page-section-item__heading">
-                            <span class="page-section-item__number">
-                                <span class="page-section-item__number-current">02</span>
-                                <span class="page-section-item__number-all">03</span>
-                            </span>
+                    <span class="page-section-item__number">
+                        <span class="page-section-item__number-current">02</span>
+                        <span class="page-section-item__number-all">03</span>
+                    </span>
                     <span class="page-section-item__name">Примеры <br>реализованных <br>проектов</span>
                 </div>
                 <div class="page-section-item__body">
@@ -139,14 +150,14 @@ $APPLICATION->SetTitle("Проекты");
     </div>
 
     <div class="page-section-item">
-        <div class="anchor" id="page3"></div>
+        <div class="anchor" id="page24"></div>
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
             <div class="container">
                 <div class="page-section-item__heading">
-                            <span class="page-section-item__number">
-                                <span class="page-section-item__number-current">03</span>
-                                <span class="page-section-item__number-all">03</span>
-                            </span>
+                    <span class="page-section-item__number">
+                        <span class="page-section-item__number-current">03</span>
+                        <span class="page-section-item__number-all">03</span>
+                    </span>
                     <span class="page-section-item__name">Примеры <br>реализованных <br>проектов</span>
                 </div>
                 <div class="page-section-item__body">
