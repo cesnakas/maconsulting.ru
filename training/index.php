@@ -254,7 +254,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "PARENT_SECTION" => "",
             "PARENT_SECTION_CODE" => "",
             "PREVIEW_TRUNCATE_LEN" => "",
-            "PROPERTY_CODE" => array("ITEM_TITLE", "ITEM_SUBTITLE", "ITEM_LIST", "ITEM_BUTTON"),
+            "PROPERTY_CODE" => array("TRAINING_TITLE", "TRAINING_SUBTITLE", "TRAINING_TEXT", "TRAINING_LIST_LEFT", "TRAINING_LIST_RIGHT", "TRAINING_LIST_ONLY_RIGHT", "TRAINING_BUTTON"),
             "SET_BROWSER_TITLE" => "N",
             "SET_LAST_MODIFIED" => "N",
             "SET_META_DESCRIPTION" => "N",

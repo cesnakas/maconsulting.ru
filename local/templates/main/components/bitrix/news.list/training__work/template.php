@@ -33,13 +33,13 @@ $this->setFrameMode(true);
                         <span class="page-section-item__number-current"><?=($i > 9) ? '' : '0';?><?= $i; ?></span>
                         <?
                         CModule::IncludeModule("iblock");
-                        $iblock_id = 6;
+                        $iblock_id = 7;
                         $arFilter = Array("IBLOCK_ID"=>$iblock_id, "ACTIVE"=>"Y");
                         $res_count = CIBlockElement::GetList(Array(), $arFilter, Array(), false, Array());
                         ?>
                         <span class="page-section-item__number-all"><?=($i > 9) ? '' : '0';?><?=$res_count;?></span>
                     </span>
-                <span class="page-section-item__name">Примеры <br>реализованных <br>проектов</span>
+                <span class="page-section-item__name">Тренинги <br>Market Access</span>
             </div>
 
             <div class="page-section-item__body">
@@ -48,7 +48,7 @@ $this->setFrameMode(true);
 
                         <div class="page-section-item__holder border-item-top">
                         <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-                            <?if(!empty($pid == "ITEM_TITLE")):?>
+                            <?if(!empty($pid == "TRAINING_TITLE")):?>
                             <h2 class="page-section-item__title">
                                 <?=$arProperty["DISPLAY_VALUE"];?>
                             </h2>
@@ -59,13 +59,23 @@ $this->setFrameMode(true);
                     </div>
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder border-item-top">
+                            
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
                             <h3 class="page-section-item__caption">
-                                <?if(!empty($pid == "ITEM_SUBTITLE")):?>
+                                <?if(!empty($pid == "TRAINING_SUBTITLE")):?>
                                     <?=$arProperty["DISPLAY_VALUE"];?>
                                 <?endif;?>
                             </h3>
                             <?endforeach;?>
+
+                            <div class="page-section-item__text">
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_TEXT")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
+                            </div>
+
                             <ul class="list-info">
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
                                 <?if(!empty($pid == "ITEM_LIST")):?>
@@ -78,8 +88,61 @@ $this->setFrameMode(true);
                     </div>
                 </div>
 
+                <div class="page-section-item__row">
+                    <div class="page-section-item__col">
+                        <div class="page-section-item__holder">
+                            <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
+                                Модули тренингов
+                            </h3>
+                            <ul class="list-info">
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_LIST_LEFT")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page-section-item__col">
+                        <div class="page-section-item__holder">
+                            <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
+                                Лекторский состав
+                            </h3>
+                            <ul class="list-info">
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_LIST_RIGHT")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <?if(!empty($pid == "TRAINING_LIST_ONLY_RIGHT")):?>
+                <div class="page-section-item__row">
+                    <div class="page-section-item__col">
+                        <div class="page-section-item__holder"></div>
+                    </div>
+                    <div class="page-section-item__col">
+                        <div class="page-section-item__holder">
+                            <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
+                                Формат мероприятия (онлайн или очный)
+                            </h3>
+                            <ul class="list-info">
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_LIST_ONLY_RIGHT")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <?endif;?>
+
                 <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-                <?if(!empty($pid == "ITEM_BUTTON")):?>
+                <?if(!empty($pid == "TRAINING_BUTTON")):?>
                 <div class="page-section-item__row">
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder">
@@ -100,22 +163,14 @@ $this->setFrameMode(true);
 <? if($i%2): ?>
 <div class="paralax paralax--xs">
     <div class="paralaxImgWrap">
-        <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/10.png" alt=""/>
+        <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/8.png" alt=""/>
     </div>
     <div class="paralaxLineLeft paralaxLineLeft--green"></div>
     <div class="paralaxLineGreen"></div>
     <div class="paralaxLineDark--bot"></div>
 </div>
 <? else: ?>
-<div class="paralax paralax--sm_two">
-    <div class="paralaxImgWrap">
-        <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/11.png" alt=""/>
-    </div>
-    <div class="paralaxLineBotWh"></div>
-    <div class="paralaxLineRightWh"></div>
-    <div class="paralaxLineLeft paralaxLineLeft--green"></div>
-    <div class="paralaxLineGreen"></div>
-</div>
+
 <? endif; ?>
 
 <? $i++; ?>
