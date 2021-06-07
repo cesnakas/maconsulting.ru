@@ -401,7 +401,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "PARENT_SECTION" => "",
                         "PARENT_SECTION_CODE" => "",
                         "PREVIEW_TRUNCATE_LEN" => "",
-                        "PROPERTY_CODE" => array("LEFT_NUMBER", "LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT", "MORE_PHOTOS"),
+                        "PROPERTY_CODE" => array("LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT", "MORE_PHOTOS"),
                         "SEARCH_PAGE" => "/search/",
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",

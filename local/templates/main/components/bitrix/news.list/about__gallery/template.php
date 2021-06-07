@@ -19,6 +19,7 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
 ?>
 
 <div class="col-12">
+<? $i = 1; ?>
 <?foreach($arResult["ITEMS"] as $arItem):?>
     <?
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -28,13 +29,9 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
         <div class="row">
 
             <div class="col-12">
-            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
                 <div class="galleryItem__number">
-                <?if(!empty($pid == "LEFT_NUMBER")):?>
-                    <?=$arProperty["DISPLAY_VALUE"];?>
-                <?endif;?>
+                <?=($i > 9) ? '' : '0';?><?= $i; ?>
                 </div>
-            <?endforeach;?>
             </div>
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -59,18 +56,37 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
 
                 <?if(!empty($pid == "RIGHT_VIDEO")):?>
                 <div class="galleryContent__video-wrap">
-                    <a href="#<?/*=$arItem["DETAIL_PAGE_URL"]*/?>" class="galleryContent__video">
+                <?
+                $arItem["RIGHT_VIDEO"] = array();
+                if(isset($arItem["PROPERTIES"]["RIGHT_VIDEO"]["VALUE"]) && is_array($arItem["PROPERTIES"]["RIGHT_VIDEO"]["VALUE"]))
+                {
+                    foreach($arItem["PROPERTIES"]["RIGHT_VIDEO"]["VALUE"] as $FILE)
+                    {
+                        $FILE = CFile::GetFileArray($FILE);
+                        if(is_array($FILE))
+                            $arItem["RIGHT_VIDEO"][]=$FILE;
+                    }
+                }
+                ?>
+                    <?foreach($arItem["RIGHT_VIDEO"] as $VIDEO):?>
+                    <a href="<?=$VIDEO["SRC"]?>" class="galleryContent__video">
                         <img
                             class="galleryContent__img"
                             src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img2.png"
-                            <?/*
-                            src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-                            */?>
-                            alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
-                            title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
                         />
+                        <?/*
+                        <img
+                            class="galleryContent__img"
+                            src="<?=$VIDEO["SRC"]?>"
+                            width="<?=$VIDEO["WIDTH"]?>"
+                            height="<?=$VIDEO["HEIGHT"]?>"
+                            alt="<?=$arItem["NAME"]?>"
+                            title="<?=$arItem["NAME"]?>"
+                        />
+                        */?>
                         <span class="galleryContent__play-btn"></span>
                     </a>
+                    <?endforeach?>
                 </div>
                 <br>
                 <?endif;?>
@@ -125,5 +141,6 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
         <?endif;?>
 
     </div>
+<? $i++; ?>
 <?endforeach;?>
 </div>
