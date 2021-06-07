@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
 
-<ul class="nav-page__ul">
+<ul class="nav-page__ul nav-page__ul--two">
 <? $i = 1; ?>
 <?foreach($arResult["ITEMS"] as $arItem):?>
 
