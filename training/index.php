@@ -5,7 +5,19 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     <div class="heading-page">
         <div class="container">
             <div class="heading-page__content">
-                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Тренинги и образовательные программы в области Market Access</h1>
+                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">
+                    <? // Тренинги и образовательные программы в области Market Access
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/training__title.php"
+                        )
+                    );?>
+                </h1>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
                     <ul class="nav-page__ul nav-page__ul--two">
                         <li class="nav-page__li">
