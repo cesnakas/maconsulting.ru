@@ -62,7 +62,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="paralaxLineGreen-sm"></div>
         </div>
     </div>
-
+<?/*
     <div class="page-section-item">
         <div class="anchor" id="page1"></div>
         <div class="page-section-item__content animUp _anim-items _anim-no-hide">
@@ -208,7 +208,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             </div>
         </div>
     </div>
-
+*/?>
     <?$APPLICATION->IncludeComponent(
         "bitrix:news.list",
         "training__work",
@@ -254,7 +254,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "PARENT_SECTION" => "",
             "PARENT_SECTION_CODE" => "",
             "PREVIEW_TRUNCATE_LEN" => "",
-            "PROPERTY_CODE" => array("TRAINING_TITLE", "TRAINING_SUBTITLE", "TRAINING_TEXT", "TRAINING_LIST_LEFT", "TRAINING_LIST_RIGHT", "TRAINING_LIST_ONLY_RIGHT", "TRAINING_BUTTON"),
+            "PROPERTY_CODE" => array("TRAINING_TITLE", "TRAINING_SUBTITLE", "TRAINING_TEXT", "TRAINING_LIST_LEFT", "TRAINING_LIST_RIGHT", "TRAINING_LIST_ONLY_RIGHT", "TRAINING_BUTTON", "TRAINING_LIST_LEFT_TITLE", "TRAINING_LIST_RIGHT_TITLE", "TRAINING_LIST_ONLY_RIGHT_TITLE"),
             "SET_BROWSER_TITLE" => "N",
             "SET_LAST_MODIFIED" => "N",
             "SET_META_DESCRIPTION" => "N",

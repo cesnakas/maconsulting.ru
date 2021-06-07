@@ -59,7 +59,7 @@ $this->setFrameMode(true);
                     </div>
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder border-item-top">
-                            
+
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
                             <h3 class="page-section-item__caption">
                                 <?if(!empty($pid == "TRAINING_SUBTITLE")):?>
@@ -88,11 +88,17 @@ $this->setFrameMode(true);
                     </div>
                 </div>
 
+                <?if(!empty($pid == "TRAINING_LIST_LEFT_TITLE") || !empty($pid == "TRAINING_LIST_RIGHT_TITLE")):?>
                 <div class="page-section-item__row">
+                    <?if(!empty($pid == "TRAINING_LIST_LEFT_TITLE")):?>
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder">
                             <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
-                                Модули тренингов
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_LIST_LEFT_TITLE")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
                             </h3>
                             <ul class="list-info">
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
@@ -103,10 +109,16 @@ $this->setFrameMode(true);
                             </ul>
                         </div>
                     </div>
+                    <?endif;?>
+                    <?if(!empty($pid == "TRAINING_LIST_RIGHT_TITLE")):?>
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder">
                             <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
-                                Лекторский состав
+                                <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                    <?if(!empty($pid == "TRAINING_LIST_RIGHT_TITLE")):?>
+                                        <?=$arProperty["DISPLAY_VALUE"];?>
+                                    <?endif;?>
+                                <?endforeach;?>
                             </h3>
                             <ul class="list-info">
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
@@ -117,9 +129,11 @@ $this->setFrameMode(true);
                             </ul>
                         </div>
                     </div>
+                    <?endif;?>
                 </div>
+                <?endif;?>
 
-                <?if(!empty($pid == "TRAINING_LIST_ONLY_RIGHT")):?>
+                <?if(!empty($pid == "TRAINING_LIST_ONLY_RIGHT_TITLE")):?>
                 <div class="page-section-item__row">
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder"></div>
@@ -127,7 +141,11 @@ $this->setFrameMode(true);
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder">
                             <h3 class="subtitle <?=($i%2) ? 'subtitle--black' : ''?>">
-                                Формат мероприятия (онлайн или очный)
+                            <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                                <?if(!empty($pid == "TRAINING_LIST_ONLY_RIGHT_TITLE")):?>
+                                    <?=$arProperty["DISPLAY_VALUE"];?>
+                                <?endif;?>
+                            <?endforeach;?>
                             </h3>
                             <ul class="list-info">
                             <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
@@ -146,7 +164,7 @@ $this->setFrameMode(true);
                 <div class="page-section-item__row">
                     <div class="page-section-item__col">
                         <div class="page-section-item__holder">
-                            <a href="<?=SITE_DIR?>contacts/" class="more-link">Свяжитесь с нами, чтобы обсудить<br>детали вашего проекта</a>
+                            <a href="<?=SITE_DIR?>contacts/" class="more-link">Связаться с нашим<br>специалистом</a>
                         </div>
                     </div>
                 </div>
