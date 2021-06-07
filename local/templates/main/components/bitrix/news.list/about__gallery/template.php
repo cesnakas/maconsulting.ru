@@ -88,46 +88,41 @@ Asset::getInstance()->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.
 
         </div>
 
-        <?/*
-        if(!empty($pid == "BOTTOM_SLIDER")):?>
+        <?if(!empty($pid == "MORE_PHOTOS")):?>
         <div class="swiper-container galleryCarousel galleryCarousel-js">
             <div class="swiper-wrapper">
+            <?
+            $arItem["MORE_PHOTOS"] = array();
+            if(isset($arItem["PROPERTIES"]["MORE_PHOTOS"]["VALUE"]) && is_array($arItem["PROPERTIES"]["MORE_PHOTOS"]["VALUE"]))
+            {
+                foreach($arItem["PROPERTIES"]["MORE_PHOTOS"]["VALUE"] as $FILE)
+                {
+                    $FILE = CFile::GetFileArray($FILE);
+                    if(is_array($FILE))
+                        $arItem["MORE_PHOTOS"][]=$FILE;
+                }
+            }
+            ?>
 
-                <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+                <?foreach($arItem["MORE_PHOTOS"] as $PHOTO):?>
                 <div class="swiper-slide">
-                    <a data-fancybox="gallery" class="galleryCarousel__slide"
-                        href="<?if($pid == 'MORE_PHOTOS') { echo $arProperty["DISPLAY_VALUE"]; }?>">
-                        <?if($pid == 'MORE_PHOTOS'):?>
-                        <img src="<?=$arProperty["DISPLAY_VALUE"]?>" alt="">
-                        <?endif;?>
+                    <a data-fancybox="gallery" href="<?=$PHOTO["SRC"]?>" class="galleryCarousel__slide">
+                        <img
+                            src="<?=$PHOTO["SRC"]?>"
+                            width="<?=$PHOTO["WIDTH"]?>"
+                            height="<?=$PHOTO["HEIGHT"]?>"
+                            alt="<?=$arItem["NAME"]?>"
+                            title="<?=$arItem["NAME"]?>"
+                        />
                     </a>
                 </div>
-                <?endforeach;?>
-
-                <?!--
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/2.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/2.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/3.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/3.png" alt=""/>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/4.png" class="galleryCarousel__slide">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/4.png" alt=""/>
-                    </a>
-                </div>
-                --?>
+                <?endforeach?>
 
             </div>
             <div class="slider-btn slider-btn-next"></div>
             <div class="slider-btn slider-btn-prev"></div>
         </div>
-        <?endif;
-        */?>
+        <?endif;?>
 
     </div>
 <?endforeach;?>

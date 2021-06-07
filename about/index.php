@@ -358,129 +358,69 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">Галерея</h2>
                 </div>
-                <div class="col-12">
-                    <div class="galleryItem animUp _anim-items _anim-no-hide">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="galleryItem__number">01</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent">
-                                    <div class="galleryContent__title">Тренинг по Мarket Аccess:<br>
-                                        «Основные положения доступа на рынок новых ЛС. Нормативно-правовое регулирование»</div>
-                                    <div class="galleryContent__text">
-                                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent__video-wrap">
-                                    <a href="#" class="galleryContent__video">
-                                        <img class="galleryContent__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img1.png" alt=""/>
-                                        <span class="galleryContent__play-btn"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galleryItem animUp _anim-items _anim-no-hide">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="galleryItem__number">02</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent">
-                                    <div class="galleryContent__title">Тренинг для журналистов:<br>
-                                        «Инновации в российском здравоохранении. Особенности освещения в СМИ»</div>
-                                    <div class="galleryContent__text">
-                                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent__video-wrap">
-                                    <a href="#" class="galleryContent__video">
-                                        <img class="galleryContent__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/video-img2.png" alt=""/>
-                                        <span class="galleryContent__play-btn"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-container galleryCarousel galleryCarousel-js">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/1.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/1.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/2.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/2.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/3.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/3.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/4.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/4.png" alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-btn slider-btn-next"></div>
-                            <div class="slider-btn slider-btn-prev"></div>
-                        </div>
-                    </div>
-                    <div class="galleryItem animUp _anim-items _anim-no-hide">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="galleryItem__number">03</div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent">
-                                    <div class="galleryContent__title">Тренинг для журналистов:<br>
-                                        «Инновации в российском здравоохранении. Особенности освещения в СМИ»</div>
-
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="galleryContent galleryContent--right">
-                                    <div class="galleryContent__text">
-                                        <p>Какая-то информация о тренинге, его успешности, итд итп… 24 марта 2020 года мы провели тренинг для…..  Мы разрабатываем образовательные программы и организовываем обучающие семинары для представителей управленческого звена здравоохранения и медицинского сообщества.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-container galleryCarousel galleryCarousel-js">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/5.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/5.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/6.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/6.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/7.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/7.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="gallery2" href="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/8.png" class="galleryCarousel__slide">
-                                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/gallery/8.png" alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-btn slider-btn-next"></div>
-                            <div class="slider-btn slider-btn-prev"></div>
-                        </div>
-                    </div>
-                </div>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:news.list",
+                    "about__gallery",
+                    Array(
+                        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                        "ADD_SECTIONS_CHAIN" => "N",
+                        "AJAX_MODE" => "N",
+                        "AJAX_OPTION_ADDITIONAL" => "",
+                        "AJAX_OPTION_HISTORY" => "N",
+                        "AJAX_OPTION_JUMP" => "N",
+                        "AJAX_OPTION_STYLE" => "Y",
+                        "CACHE_FILTER" => "N",
+                        "CACHE_GROUPS" => "Y",
+                        "CACHE_TIME" => "36000000",
+                        "CACHE_TYPE" => "A",
+                        "CHECK_DATES" => "Y",
+                        "DETAIL_URL" => "",
+                        "DISPLAY_BOTTOM_PAGER" => "N",
+                        "DISPLAY_DATE" => "N",
+                        "DISPLAY_NAME" => "Y",
+                        "DISPLAY_PICTURE" => "Y",
+                        "DISPLAY_PREVIEW_TEXT" => "Y",
+                        "DISPLAY_TOP_PAGER" => "N",
+                        "FIELD_CODE" => array("", ""),
+                        "FILTER_NAME" => "",
+                        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                        "IBLOCK_ID" => "5",
+                        "IBLOCK_TYPE" => "about",
+                        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                        "INCLUDE_SUBSECTIONS" => "Y",
+                        "MEDIA_PROPERTY" => "",
+                        "MESSAGE_404" => "",
+                        "NEWS_COUNT" => "20",
+                        "PAGER_BASE_LINK_ENABLE" => "N",
+                        "PAGER_DESC_NUMBERING" => "N",
+                        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                        "PAGER_SHOW_ALL" => "N",
+                        "PAGER_SHOW_ALWAYS" => "N",
+                        "PAGER_TEMPLATE" => ".default",
+                        "PAGER_TITLE" => "Новости",
+                        "PARENT_SECTION" => "",
+                        "PARENT_SECTION_CODE" => "",
+                        "PREVIEW_TRUNCATE_LEN" => "",
+                        "PROPERTY_CODE" => array("LEFT_NUMBER", "LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT", "MORE_PHOTOS"),
+                        "SEARCH_PAGE" => "/search/",
+                        "SET_BROWSER_TITLE" => "N",
+                        "SET_LAST_MODIFIED" => "N",
+                        "SET_META_DESCRIPTION" => "N",
+                        "SET_META_KEYWORDS" => "N",
+                        "SET_STATUS_404" => "N",
+                        "SET_TITLE" => "N",
+                        "SHOW_404" => "N",
+                        "SLIDER_PROPERTY" => "",
+                        "SORT_BY1" => "ID",
+                        "SORT_BY2" => "ID",
+                        "SORT_ORDER1" => "ASC",
+                        "SORT_ORDER2" => "ASC",
+                        "STRICT_SECTION_CHECK" => "N",
+                        "TEMPLATE_THEME" => "",
+                        "USE_RATING" => "N",
+                        "USE_SHARE" => "N"
+                    )
+                );?>
             </div>
         </div>
     </div>
