@@ -24,7 +24,7 @@ $APPLICATION->SetTitle("Проекты");
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:news.line",
-                        "projects_nav",
+                        "projects__nav",
                         Array(
                             "ACTIVE_DATE_FORMAT" => "d.m.Y",
                             "CACHE_GROUPS" => "Y",

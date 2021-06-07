@@ -19,6 +19,26 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                     );?>
                 </h1>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:news.line",
+                        "projects__nav",
+                        Array(
+                            "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "300",
+                            "CACHE_TYPE" => "A",
+                            "DETAIL_URL" => "#page#ELEMENT_ID#",
+                            "FIELD_CODE" => array("ID","CODE",""),
+                            "IBLOCKS" => array("7"),
+                            "IBLOCK_TYPE" => "projects",
+                            "NEWS_COUNT" => "20",
+                            "SORT_BY1" => "ID",
+                            "SORT_BY2" => "ID",
+                            "SORT_ORDER1" => "ASC",
+                            "SORT_ORDER2" => "ASC"
+                        )
+                    );?>
+                    <?/*
                     <ul class="nav-page__ul nav-page__ul--two">
                         <li class="nav-page__li">
                             <a href="#page1" class="nav-page__link link-anchor">
@@ -33,6 +53,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                             </a>
                         </li>
                     </ul>
+                    */?>
                 </nav>
             </div>
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
