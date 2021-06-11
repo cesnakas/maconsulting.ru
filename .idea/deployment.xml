@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="mac.acroweb297.tmweb.ru" createEmptyFolders="true" traceLevel="ERRORS" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="maconsulting.1bx.su" createEmptyFolders="true" traceLevel="ERRORS" autoUploadExternalChanges="true">
     <serverData>
       <paths name="mac.acroweb297.tmweb.ru">
         <serverdata>
@@ -10,6 +10,17 @@
           <excludedPaths>
             <excludedPath path="/upload" />
             <excludedPath path="/bitrix" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="maconsulting.1bx.su">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/bitrix" />
+            <excludedPath path="/upload" />
           </excludedPaths>
         </serverdata>
       </paths>

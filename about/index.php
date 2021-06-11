@@ -72,7 +72,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                     "AREA_FILE_SHOW" => "file",
                                     "AREA_FILE_SUFFIX" => "inc",
                                     "EDIT_TEMPLATE" => "",
-                                    "PATH" => "/include/about__about-left.php"
+                                    "PATH" => SITE_TEMPLATE_PATH."/includes/about/about__about-left.php"
                                 )
                             );?>
                         </h3>
@@ -158,8 +158,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "FIELD_CODE" => array("", ""),
                         "FILTER_NAME" => "",
                         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                        "IBLOCK_ID" => "4",
-                        "IBLOCK_TYPE" => "lists",
+                        "IBLOCK_ID" => "1",
+                        "IBLOCK_TYPE" => "about",
                         "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                         "INCLUDE_SUBSECTIONS" => "Y",
                         "MESSAGE_404" => "",
