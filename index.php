@@ -31,7 +31,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "FILTER_NAME" => "",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
                     "IBLOCK_ID" => "1",
-                    "IBLOCK_TYPE" => "sliders",
+                    "IBLOCK_TYPE" => "slider",
                     "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                     "INCLUDE_SUBSECTIONS" => "Y",
                     "MESSAGE_404" => "",
