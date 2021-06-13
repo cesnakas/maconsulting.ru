@@ -117,7 +117,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/13.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/13.png" alt="img"/>
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -133,7 +133,16 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <h2 class="title animUp _anim-items _anim-no-hide">Наши принципы</h2>
+                    <h2 class="title animUp _anim-items _anim-no-hide">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "page",
+                                "AREA_FILE_SUFFIX" => "list-title"
+                            )
+                        );?>
+                    </h2>
                 </div>
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:news.list",
@@ -199,44 +208,38 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/14.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/14.png" alt="img"/>
         </div>
         <div class="paralaxLineRight paralaxLineRight--top"></div>
         <div class="paralaxLineDark--right"></div>
         <div class="paralaxLinTopWh"></div>
     </div>
 
-    <div class="direction_of_work">
+    <section class="direction_of_work">
         <div class="anchor" id="page3"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">
-                        <? // Направления работы в 2021 году
-                        $APPLICATION->IncludeComponent(
+                        <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/about__areaswork-title.php"
+                                "AREA_FILE_SHOW" => "page",
+                                "AREA_FILE_SUFFIX" => "areas_work-title",
                             )
                         );?>
                     </h2>
                 </div>
                 <div class="col-12">
                     <h3 class="subtitle animUp _anim-items _anim-no-hide">
-                        <? // Тренинги и образовательные программы
-                        $APPLICATION->IncludeComponent(
+                        <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/about__areaswork-subtitle.php"
+                                "AREA_FILE_SHOW" => "page",
+                                "AREA_FILE_SUFFIX" => "areas_work-subtitle",
                             )
                         );?>
                     </h3>
@@ -247,14 +250,14 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/about__areaswork-left.php"
+                                "AREA_FILE_SHOW" => "page",
+                                "AREA_FILE_SUFFIX" => "areas_work-left",
                             )
                         );?>
                     </div>
-                    <a href="<?=SITE_DIR?>projects/" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
+                    <a href="<?=SITE_DIR?>projects/" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">
+                        Примеры наших<br>реализованных проектов
+                    </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="direction_of_work__content animUp _anim-items _anim-no-hide">
@@ -263,15 +266,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">01</div>
                                     <div class="direction_of_work__name">
-                                        <? // Генно-клеточная терапия и молекулярно-генетическая диагностика
-                                        $APPLICATION->IncludeComponent(
+                                        <?$APPLICATION->IncludeComponent(
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "file",
-                                                "AREA_FILE_SUFFIX" => "inc",
-                                                "EDIT_TEMPLATE" => "",
-                                                "PATH" => "/include/about__areaswork-right-01.php"
+                                                "AREA_FILE_SHOW" => "page",
+                                                "AREA_FILE_SUFFIX" => "areas_work-right-01",
                                             )
                                         );?>
                                     </div>
@@ -281,15 +281,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">02</div>
                                     <div class="direction_of_work__name">
-                                        <? // Применение «офф-лейбл» лекарственных препаратов в клинической практике
-                                        $APPLICATION->IncludeComponent(
+                                        <?$APPLICATION->IncludeComponent(
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "file",
-                                                "AREA_FILE_SUFFIX" => "inc",
-                                                "EDIT_TEMPLATE" => "",
-                                                "PATH" => "/include/about__areaswork-right-02.php"
+                                                "AREA_FILE_SHOW" => "page",
+                                                "AREA_FILE_SUFFIX" => "areas_work-right-02",
                                             )
                                         );?>
                                     </div>
@@ -299,15 +296,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">03</div>
                                     <div class="direction_of_work__name">
-                                        <? // Инновационные модели лекарственного обеспечения. Инновационные контракты
-                                        $APPLICATION->IncludeComponent(
+                                        <?$APPLICATION->IncludeComponent(
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "file",
-                                                "AREA_FILE_SUFFIX" => "inc",
-                                                "EDIT_TEMPLATE" => "",
-                                                "PATH" => "/include/about__areaswork-right-03.php"
+                                                "AREA_FILE_SHOW" => "page",
+                                                "AREA_FILE_SUFFIX" => "areas_work-right-03",
                                             )
                                         );?>
                                     </div>
@@ -317,33 +311,32 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">04</div>
                                     <div class="direction_of_work__name">
-                                        <? // Повышение доступности оказания медицинской помощи для пациентов с редкими (орфанными) заболеваниями, ССЗ, онкологическими заболеваниями, онко гематологическими заболеваниями
-                                        $APPLICATION->IncludeComponent(
+                                        <?$APPLICATION->IncludeComponent(
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "file",
-                                                "AREA_FILE_SUFFIX" => "inc",
-                                                "EDIT_TEMPLATE" => "",
-                                                "PATH" => "/include/about__areaswork-right-04.php"
+                                                "AREA_FILE_SHOW" => "page",
+                                                "AREA_FILE_SUFFIX" => "areas_work-right-04",
                                             )
                                         );?>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 d-block d-md-none">
-                                <a href="<?=SITE_DIR?>projects/" class="more-link animUp _anim-items _anim-no-hide">Примеры наших<br>реализованных проектов</a>
+                                <a href="<?=SITE_DIR?>projects/" class="more-link animUp _anim-items _anim-no-hide">
+                                    Примеры наших<br>реализованных проектов
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/15.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/15.png" alt="img"/>
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -430,7 +423,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/5.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/5.png" alt="img"/>
         </div>
     </div>
 
