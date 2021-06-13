@@ -210,7 +210,6 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                     )
                 );?>
             </div>
-
         </div>
     </section>
 
@@ -234,8 +233,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "page",
-                                "AREA_FILE_SUFFIX" => "areas_work-title",
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR."about/include/about__areas_work-title.php",
                             )
                         );?>
                     </h2>
@@ -246,8 +245,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "page",
-                                "AREA_FILE_SUFFIX" => "areas_work-subtitle",
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR."about/include/about__areas_work-subtitle.php",
                             )
                         );?>
                     </h3>
@@ -258,8 +257,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "page",
-                                "AREA_FILE_SUFFIX" => "areas_work-left",
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR."about/include/about__areas_work-left.php",
                             )
                         );?>
                     </div>
@@ -278,8 +277,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "page",
-                                                "AREA_FILE_SUFFIX" => "areas_work-right-01",
+                                                "AREA_FILE_SHOW" => "file",
+                                                "PATH" => SITE_DIR."about/include/about__areas_work-right-01.php",
                                             )
                                         );?>
                                     </div>
@@ -293,8 +292,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "page",
-                                                "AREA_FILE_SUFFIX" => "areas_work-right-02",
+                                                "AREA_FILE_SHOW" => "file",
+                                                "PATH" => SITE_DIR."about/include/about__areas_work-right-02.php",
                                             )
                                         );?>
                                     </div>
@@ -308,8 +307,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "page",
-                                                "AREA_FILE_SUFFIX" => "areas_work-right-03",
+                                                "AREA_FILE_SHOW" => "file",
+                                                "PATH" => SITE_DIR."about/include/about__areas_work-right-03.php",
                                             )
                                         );?>
                                     </div>
@@ -323,8 +322,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                             "bitrix:main.include",
                                             "",
                                             Array(
-                                                "AREA_FILE_SHOW" => "page",
-                                                "AREA_FILE_SUFFIX" => "areas_work-right-04",
+                                                "AREA_FILE_SHOW" => "file",
+                                                "PATH" => SITE_DIR."about/include/about__areas_work-right-04.php",
                                             )
                                         );?>
                                     </div>
@@ -365,8 +364,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "page",
-                                "AREA_FILE_SUFFIX" => "gallery-title"
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR."about/include/about__gallery-title.php"
                             )
                         );?>
                     </h2>
