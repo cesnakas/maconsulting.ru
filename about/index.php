@@ -6,10 +6,19 @@ $asset->addCss('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery
 $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js');
 ?>
 
-    <div class="heading-page">
+    <section class="heading-page">
         <div class="container">
             <div class="heading-page__content">
-                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Market Access Consulting – комплексные решения и проекты в области здравоохранения</h1>
+                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "page",
+                            "AREA_FILE_SUFFIX" => "heading-title"
+                        )
+                    );?>
+                </h1>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
                     <ul class="nav-page__ul">
                         <li class="nav-page__li">
@@ -47,7 +56,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax-anim _anim-items _anim-no-hide">
         <div class="anim-line">
@@ -127,7 +136,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
         <div class="paralaxLineBotWh--r"></div>
     </div>
 
-    <div class="our-principles">
+    <section class="our-principles">
         <div class="anchor" id="page2"></div>
         <div class="container">
             <div class="row">
@@ -170,8 +179,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "FIELD_CODE" => array("", ""),
                         "FILTER_NAME" => "",
                         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                        "IBLOCK_ID" => "1",
-                        "IBLOCK_TYPE" => "about",
+                        "IBLOCK_ID" => "4",
+                        "IBLOCK_TYPE" => "projects",
                         "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                         "INCLUDE_SUBSECTIONS" => "Y",
                         "MESSAGE_404" => "",
@@ -204,7 +213,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
             </div>
 
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
@@ -346,13 +355,22 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
         <div class="paralaxLineBotWh--r"></div>
     </div>
 
-    <div class="galleryWrap">
+    <section class="galleryWrap">
         <div class="anchor" id="page4"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <h2 class="title animUp _anim-items _anim-no-hide">Галерея</h2>
+                    <h2 class="title animUp _anim-items _anim-no-hide">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "page",
+                                "AREA_FILE_SUFFIX" => "gallery-title"
+                            )
+                        );?>
+                    </h2>
                 </div>
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:news.list",
@@ -419,7 +437,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 );?>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">

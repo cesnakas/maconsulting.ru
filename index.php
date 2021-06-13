@@ -186,8 +186,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                // "AREA_FILE_SUFFIX" => "inc",
-                                // "EDIT_TEMPLATE" => "",
                                 "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-title.php"
                             )
                         );?>
