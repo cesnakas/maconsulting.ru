@@ -64,7 +64,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         </div>
     </div>
 
-    <div class="aboutMain">
+    <section class="aboutMain">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -98,11 +98,11 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/2.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/2.png" alt="img"/>
         </div>
         <div class="paralaxLineRight"></div>
     </div>
@@ -110,7 +110,9 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
     <div class="servicesMain">
         <div class="anchor" id="servicesMain__anchor"></div>
         <div class="container">
-            <h2 class="title animUp _anim-items _anim-no-hide">Наши услуги</h2>
+            <h2 class="title animUp _anim-items _anim-no-hide">
+                Наши услуги
+            </h2>
             <div class="servicesMain__list animUp _anim-items _anim-no-hide">
                 <div class="servicesMain__item">
                     <a href="<?=SITE_DIR?>service1/" class="servicesMain__link">
@@ -166,7 +168,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/3.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/3.png" alt="img"/>
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -178,10 +180,32 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <h2 class="title animUp _anim-items _anim-no-hide">Тренинги<br> Market Access</h2>
+                    <h2 class="title animUp _anim-items _anim-no-hide">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-title.php"
+                            )
+                        );?>
+                    </h2>
                 </div>
                 <div class="col-12">
-                    <h3 class="subtitle animUp _anim-items _anim-no-hide">Тренинги и образовательные программы</h3>
+                    <h3 class="subtitle animUp _anim-items _anim-no-hide">
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-subtitle.php"
+                            )
+                        );?>
+                    </h3>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="trainingMain__caption animUp _anim-items _anim-no-hide">Мы эксперты по разработке авторских образовательных программ и организации корпоративных тренингов, посвященных продвижению медицинских технологий на рынок государственного финансирования. </div>
@@ -217,7 +241,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/4.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/4.png" alt="img"/>
         </div>
         <div class="paralaxLineRight paralaxLineRight--gray"></div>
     </div>

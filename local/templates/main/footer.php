@@ -2,7 +2,7 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 ?>
 
-        </section>
+        </main>
         <!---/Main Content-->
 
         <? if (!CSite::InDir(SITE_DIR.'contacts/')): ?>

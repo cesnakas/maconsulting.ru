@@ -98,5 +98,4 @@ $asset = Asset::getInstance();
         </header>
         <!---/Header-->
         <!---Main Content-->
-        <section class="mainContent">
-
+        <main class="mainContent">
