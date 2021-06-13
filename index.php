@@ -76,7 +76,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "inc",
                                 "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/main__about-left.php"
+                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__about-left.php"
                             )
                         );?>
                     </div>
@@ -90,7 +90,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "inc",
                                 "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/main__about-right.php"
+                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__about-right.php"
                             )
                         );?>
                         <a href="<?=SITE_DIR?>about/" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>

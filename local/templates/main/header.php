@@ -36,7 +36,7 @@ $asset = Asset::getInstance();
 
     <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/dist/img/favicon.png" type="image/png">
     <link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/dist/img/favicon.png" type="image/png">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <?/*link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"*/?>
 
 </head>
 <body>
