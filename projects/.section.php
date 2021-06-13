@@ -1,7 +1,7 @@
 <?
-$sSectionName = "MAC - Проекты";
+$sSectionName = "Проекты";
 $arDirProperties = Array(
-    "description" => "MAC - Проекты",
-    "keywords" => "MAC - Проекты",
-    "TITLE" => "MAC - Проекты"
+    "description" => "Проекты — Market Access Consulting — агентство полного цикла",
+    "keywords" => "Проекты, Market Access Consulting, агентство полного цикла",
+    "TITLE" => "Проекты — Market Access Consulting"
 );
