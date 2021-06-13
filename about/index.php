@@ -146,8 +146,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                             "bitrix:main.include",
                             "",
                             Array(
-                                "AREA_FILE_SHOW" => "page",
-                                "AREA_FILE_SUFFIX" => "list-title"
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR."about/include/about__list-title.php"
                             )
                         );?>
                     </h2>
@@ -178,8 +178,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "FIELD_CODE" => array("", ""),
                         "FILTER_NAME" => "",
                         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                        "IBLOCK_ID" => "4",
-                        "IBLOCK_TYPE" => "projects",
+                        "IBLOCK_ID" => "6",
+                        "IBLOCK_TYPE" => "principles",
                         "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                         "INCLUDE_SUBSECTIONS" => "Y",
                         "MESSAGE_404" => "",
