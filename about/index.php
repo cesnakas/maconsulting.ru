@@ -57,11 +57,20 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
         </div>
     </div>
 
-    <div class="aboutPage">
+    <section class="aboutPage">
         <div class="anchor" id="page1"></div>
         <div class="container">
             <div class="aboutPage__item animUp _anim-items _anim-no-hide">
-                <h2 class="subtitle">О компании</h2>
+                <h2 class="subtitle">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "page",
+                            "AREA_FILE_SUFFIX" => "about-title"
+                        )
+                    );?>
+                </h2>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h3 class="aboutPage__caption">
@@ -69,10 +78,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 "bitrix:main.include",
                                 "",
                                 Array(
-                                    "AREA_FILE_SHOW" => "file",
-                                    "AREA_FILE_SUFFIX" => "inc",
-                                    "EDIT_TEMPLATE" => "",
-                                    "PATH" => SITE_TEMPLATE_PATH."/includes/about/about__about-left.php"
+                                    "AREA_FILE_SHOW" => "page",
+                                    "AREA_FILE_SUFFIX" => "about-left"
                                 )
                             );?>
                         </h3>
@@ -85,10 +92,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                         "bitrix:main.include",
                                         "",
                                         Array(
-                                            "AREA_FILE_SHOW" => "file",
-                                            "AREA_FILE_SUFFIX" => "inc",
-                                            "EDIT_TEMPLATE" => "",
-                                            "PATH" => "/include/about__about-right-col_1.php"
+                                            "AREA_FILE_SHOW" => "page",
+                                            "AREA_FILE_SUFFIX" => "about-right-col-1"
                                         )
                                     );?>
                                 </div>
@@ -97,10 +102,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                         "bitrix:main.include",
                                         "",
                                         Array(
-                                            "AREA_FILE_SHOW" => "file",
-                                            "AREA_FILE_SUFFIX" => "inc",
-                                            "EDIT_TEMPLATE" => "",
-                                            "PATH" => "/include/about__about-right-col_2.php"
+                                            "AREA_FILE_SHOW" => "page",
+                                            "AREA_FILE_SUFFIX" => "about-right-col-2"
                                         )
                                     );?>
                                 </div>
@@ -110,7 +113,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">

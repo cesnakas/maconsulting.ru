@@ -107,7 +107,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         <div class="paralaxLineRight"></div>
     </div>
 
-    <div class="servicesMain">
+    <section class="servicesMain">
         <div class="anchor" id="servicesMain__anchor"></div>
         <div class="container">
             <h2 class="title animUp _anim-items _anim-no-hide">
@@ -164,7 +164,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
@@ -175,7 +175,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         <div class="paralaxLineLeft"></div>
     </div>
 
-    <div class="trainingMain">
+    <section class="trainingMain">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
@@ -186,8 +186,8 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
+                                // "AREA_FILE_SUFFIX" => "inc",
+                                // "EDIT_TEMPLATE" => "",
                                 "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-title.php"
                             )
                         );?>
@@ -237,7 +237,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             </div>
 
         </div>
-    </div>
+    </section>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
@@ -251,7 +251,9 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <h2 class="title animUp _anim-items _anim-no-hide">Наши клиенты</h2>
+                    <h2 class="title animUp _anim-items _anim-no-hide">
+                        Наши клиенты
+                    </h2>
                 </div>
             </div>
         </div>
@@ -373,7 +375,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/1.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/1.png" alt="img"/>
         </div>
     </div>
 
