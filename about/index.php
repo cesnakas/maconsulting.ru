@@ -13,8 +13,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "bitrix:main.include",
                         "",
                         Array(
-                            "AREA_FILE_SHOW" => "page",
-                            "AREA_FILE_SUFFIX" => "heading-title"
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_DIR."about/include/about__heading-title.php"
                         )
                     );?>
                 </h1>
@@ -74,8 +74,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "bitrix:main.include",
                         "",
                         Array(
-                            "AREA_FILE_SHOW" => "page",
-                            "AREA_FILE_SUFFIX" => "about-title"
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_DIR."about/include/about__about-title.php"
                         )
                     );?>
                 </h2>
@@ -86,8 +86,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 "bitrix:main.include",
                                 "",
                                 Array(
-                                    "AREA_FILE_SHOW" => "page",
-                                    "AREA_FILE_SUFFIX" => "about-left"
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_DIR."about/include/about__about-left.php"
                                 )
                             );?>
                         </h3>
@@ -100,8 +100,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                         "bitrix:main.include",
                                         "",
                                         Array(
-                                            "AREA_FILE_SHOW" => "page",
-                                            "AREA_FILE_SUFFIX" => "about-right-col-1"
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_DIR."about/include/about__about-right-col-1.php"
                                         )
                                     );?>
                                 </div>
@@ -110,8 +110,8 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                         "bitrix:main.include",
                                         "",
                                         Array(
-                                            "AREA_FILE_SHOW" => "page",
-                                            "AREA_FILE_SUFFIX" => "about-right-col-2"
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_DIR."about/include/about__about-right-col-2.php"
                                         )
                                     );?>
                                 </div>
