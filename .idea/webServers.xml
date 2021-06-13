@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="40ffc2ab-e859-40f6-ba52-1c87948f2ded" name="macconsulting.cesnakas.com" url="http://maconsulting.cesnakas.com">
+        <fileTransfer rootFolder="/www/maconsulting.cesnakas.com/" host="maconsulting.cesnakas.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

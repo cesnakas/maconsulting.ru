@@ -13,6 +13,13 @@
           </excludedPaths>
         </serverdata>
       </paths>
+      <paths name="macconsulting.cesnakas.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="maconsulting.1bx.su">
         <serverdata>
           <mappings>
