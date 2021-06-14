@@ -74,9 +74,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__about-left.php"
+                                "PATH" => SITE_DIR."include/main__about-left.php"
                             )
                         );?>
                     </div>
@@ -88,9 +86,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__about-right.php"
+                                "PATH" => SITE_DIR."include/main__about-right.php"
                             )
                         );?>
                         <a href="<?=SITE_DIR?>about/" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>
@@ -186,7 +182,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-title.php"
+                                "PATH" => SITE_DIR."include/main__training-title.php"
                             )
                         );?>
                     </h2>
@@ -198,7 +194,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_TEMPLATE_PATH."/includes/main/main__training-subtitle.php"
+                                "PATH" => SITE_DIR."include/main__training-subtitle.php"
                             )
                         );?>
                     </h3>
