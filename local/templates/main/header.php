@@ -36,7 +36,6 @@ $asset = Asset::getInstance();
 
     <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/dist/img/favicon.png" type="image/png">
     <link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/dist/img/favicon.png" type="image/png">
-    <?/*link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"*/?>
 
 </head>
 <body>
@@ -55,7 +54,6 @@ $asset = Asset::getInstance();
                 </div>
                 <div class="header__content">
                     <nav class="nav navMain-js">
-
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "navbar__header",
@@ -72,7 +70,6 @@ $asset = Asset::getInstance();
                                 "USE_EXT" => "N"
                             )
                         );?>
-
                     </nav>
                     <button class="menu-burger menu-burger-js">
                         <span class="menu-burger__name">Меню</span>
@@ -81,15 +78,12 @@ $asset = Asset::getInstance();
                         </span>
                     </button>
                     <div class="phone-group">
-                        <? // <a href="tel:" class="phone-link"></a>
-                        $APPLICATION->IncludeComponent(
+                        <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "AREA_FILE_SUFFIX" => "inc",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/include/phone__header-footer.php"
+                                "PATH" => SITE_TEMPLATE_PATH."/include/main__phone.php"
                             )
                         );?>
                     </div>
