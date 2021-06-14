@@ -2,7 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 ?>
 
-    <div class="sliderMainWrap">
+    <section class="sliderMainWrap">
         <div class="container">
             <?$APPLICATION->IncludeComponent(
                 "bitrix:news.list",
@@ -62,7 +62,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 )
             );?>
         </div>
-    </div>
+    </section>
 
     <section class="aboutMain">
         <div class="container">

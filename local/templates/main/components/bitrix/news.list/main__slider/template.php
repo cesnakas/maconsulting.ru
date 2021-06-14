@@ -64,43 +64,6 @@ $this->setFrameMode(true);
                 <?endif?>
                 </div>
 
-            <?/*
-            if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
-                <span class="news-date-time"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
-            <?endif
-            */?>
-
-            <?/*
-            if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
-                <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-                    <a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a><br />
-                <?else:?>
-                    <b><?echo $arItem["NAME"]?></b><br />
-                <?endif;?>
-            <?endif;
-            */?>
-
-            <?/*
-            foreach($arItem["FIELDS"] as $code=>$value):?>
-                <small>
-                <?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?>
-                </small><br />
-            <?endforeach;
-            */?>
-
-            <?/*
-            foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-                <small>
-                <?=$arProperty["NAME"]?>:&nbsp;
-                <?if(is_array($arProperty["DISPLAY_VALUE"])):?>
-                    <?=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
-                <?else:?>
-                    <?=$arProperty["DISPLAY_VALUE"];?>
-                <?endif?>
-                </small><br />
-            <?endforeach;
-            */?>
-
             </div>
         </div>
 <?endforeach;?>
