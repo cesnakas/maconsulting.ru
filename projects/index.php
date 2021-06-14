@@ -7,16 +7,12 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="heading-page__content">
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Наши<br> проекты</h1>
                 <div class="heading-page__text animUp _anim-items _anim-no-hide">
-                    <?
-                    // Несколько примеров успешно реализованных стратегий по совершенствованию оказания медицинской помощи больным.
-                    $APPLICATION->IncludeComponent(
+                    <?$APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "",
                         Array(
                             "AREA_FILE_SHOW" => "file",
-                            "AREA_FILE_SUFFIX" => "inc",
-                            "EDIT_TEMPLATE" => "",
-                            "PATH" => "/include/projects__subtitle.php"
+                            "PATH" => SITE_DIR."projects/include/projects__subtitle.php"
                         )
                     );?>
                 </div>

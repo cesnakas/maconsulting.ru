@@ -16,7 +16,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                 "",
                                 Array(
                                     "AREA_FILE_SHOW" => "file",
-                                    "PATH" => SITE_DIR."/contacts/include/contacts__subtitle.php"
+                                    "PATH" => SITE_DIR."contacts/include/contacts__subtitle.php"
                                 )
                             );?>
                         </h2>
@@ -27,7 +27,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                     "",
                                     Array(
                                         "AREA_FILE_SHOW" => "file",
-                                        "PATH" => SITE_DIR."include/footer__address.php"
+                                        "PATH" => SITE_TEMPLATE_PATH."/include/main__address.php"
                                     )
                                 );?>
                             </div>
@@ -37,7 +37,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                     "",
                                     Array(
                                         "AREA_FILE_SHOW" => "file",
-                                        "PATH" => SITE_DIR."include/footer__working-schedule.php"
+                                        "PATH" => SITE_TEMPLATE_PATH."/include/main__working-schedule.php"
                                     )
                                 );?>
                             </div>
@@ -48,7 +48,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                         "",
                                         Array(
                                             "AREA_FILE_SHOW" => "file",
-                                            "PATH" => SITE_DIR."include/footer__phone-email.php"
+                                            "PATH" => SITE_TEMPLATE_PATH."/include/main__phone-email.php"
                                         )
                                     );?>
                                 </p>
@@ -67,7 +67,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                         "",
                                         Array(
                                             "AREA_FILE_SHOW" => "file",
-                                            "PATH" => SITE_DIR."include/footer__social.php"
+                                            "PATH" => SITE_TEMPLATE_PATH."/include/main__social.php"
                                         )
                                     );?>
                                 </div>
