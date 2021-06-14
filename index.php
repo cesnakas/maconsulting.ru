@@ -306,7 +306,9 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="subtitle subtitle--black animUp _anim-items _anim-no-hide">О нас говорят</h3>
+                    <h3 class="subtitle subtitle--black animUp _anim-items _anim-no-hide">
+                        О нас говорят
+                    </h3>
                 </div>
             </div>
             <?$APPLICATION->IncludeComponent(
@@ -335,8 +337,8 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "FIELD_CODE" => array("",""),
                     "FILTER_NAME" => "",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                    "IBLOCK_ID" => "3",
-                    "IBLOCK_TYPE" => "sliders",
+                    "IBLOCK_ID" => "8",
+                    "IBLOCK_TYPE" => "main",
                     "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                     "INCLUDE_SUBSECTIONS" => "Y",
                     "MESSAGE_404" => "",
@@ -351,7 +353,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "PARENT_SECTION" => "",
                     "PARENT_SECTION_CODE" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array("REVIEW_POST","REVIEW_COMPANY","REVIEW_DETAIL",""),
+                    "PROPERTY_CODE" => array("REVIEW_COMPANY","REVIEW_DETAIL",""),
                     "SET_BROWSER_TITLE" => "N",
                     "SET_LAST_MODIFIED" => "N",
                     "SET_META_DESCRIPTION" => "N",

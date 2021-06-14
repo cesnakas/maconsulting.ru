@@ -31,9 +31,6 @@ $this->setFrameMode(true);
                     </div>
                     <div class="aboutUsMain__post" data-swiper-animation="animate__fadeInUp" data-duration=".8s" data-delay=".5s" data-swiper-out-animation="animate__fadeOutDown" data-out-duration=".7s">
                     <?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-                        <?if($pid == "REVIEW_POST"):?>
-                            <?=$arProperty["DISPLAY_VALUE"];?>
-                        <?endif;?>
                         <?if($pid == "REVIEW_COMPANY"):?>
                             <br>
                             <?=$arProperty["DISPLAY_VALUE"];?>
@@ -54,67 +51,7 @@ $this->setFrameMode(true);
                             <?endforeach;?>
                         </div>
                     </div>
-                <?/*
-                if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
-                    <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                            <img
-                                src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-                                width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
-                                height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
-                                alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
-                                title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-                            />
-                        </a>
-                    <?else:?>
-                        <img
-                            src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-                            width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
-                            height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
-                            alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
-                            title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-                        />
-                    <?endif;?>
-                <?endif
-                */?>
                 </div>
-
-            <?/*
-            if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
-                <span class="news-date-time"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
-            <?endif
-            */?>
-
-            <?/*
-            if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
-                <?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-                    <a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a><br />
-                <?else:?>
-                    <b><?echo $arItem["NAME"]?></b><br />
-                <?endif;?>
-            <?endif;
-            */?>
-
-            <?/*
-            foreach($arItem["FIELDS"] as $code=>$value):?>
-                <small>
-                <?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?>
-                </small><br />
-            <?endforeach;
-            */?>
-
-            <?/*
-            foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-                <small>
-                <?=$arProperty["NAME"]?>:&nbsp;
-                <?if(is_array($arProperty["DISPLAY_VALUE"])):?>
-                    <?=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
-                <?else:?>
-                    <?=$arProperty["DISPLAY_VALUE"];?>
-                <?endif?>
-                </small><br />
-            <?endforeach;
-            */?>
 
             </div>
         </div>
