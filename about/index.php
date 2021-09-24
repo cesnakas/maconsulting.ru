@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 // fancybox
 $asset->addCss('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
@@ -9,13 +9,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
         <div class="container">
             <div class="heading-page__content">
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">
-                    <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
+                    <?php
+                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                        [
                             "AREA_FILE_SHOW" => "file",
                             "PATH" => SITE_DIR."about/include/about__heading-title.php"
-                        )
+                        ]
                     );?>
                 </h1>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
@@ -50,7 +49,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/1.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/1.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -70,25 +69,23 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
         <div class="container">
             <div class="aboutPage__item animUp _anim-items _anim-no-hide">
                 <h2 class="subtitle">
-                    <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
+                    <?php
+                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                        [
                             "AREA_FILE_SHOW" => "file",
                             "PATH" => SITE_DIR."about/include/about__about-title.php"
-                        )
+                        ]
                     );?>
                 </h2>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h3 class="aboutPage__caption">
-                            <?$APPLICATION->IncludeComponent(
-                                "bitrix:main.include",
-                                "",
-                                Array(
+                            <?php
+                            $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                [
                                     "AREA_FILE_SHOW" => "file",
                                     "PATH" => SITE_DIR."about/include/about__about-left.php"
-                                )
+                                ]
                             );?>
                         </h3>
                     </div>
@@ -96,23 +93,21 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         <div class="aboutPage__text">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <?$APPLICATION->IncludeComponent(
-                                        "bitrix:main.include",
-                                        "",
-                                        Array(
+                                    <?php
+                                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                        [
                                             "AREA_FILE_SHOW" => "file",
                                             "PATH" => SITE_DIR."about/include/about__about-right-col-1.php"
-                                        )
+                                        ]
                                     );?>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                    <?$APPLICATION->IncludeComponent(
-                                        "bitrix:main.include",
-                                        "",
-                                        Array(
+                                    <?php
+                                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                        [
                                             "AREA_FILE_SHOW" => "file",
                                             "PATH" => SITE_DIR."about/include/about__about-right-col-2.php"
-                                        )
+                                        ]
                                     );?>
                                 </div>
                             </div>
@@ -125,7 +120,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/13.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/13.png" alt="img">
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -142,20 +137,20 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."about/include/about__list-title.php"
-                            )
+                            ]
                         );?>
                     </h2>
                 </div>
-                <?$APPLICATION->IncludeComponent(
+                <?php
+                $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
                     "about__list",
-                    Array(
+                    [
                         "ACTIVE_DATE_FORMAT" => "d.m.Y",
                         "ADD_SECTIONS_CHAIN" => "N",
                         "AJAX_MODE" => "N",
@@ -175,7 +170,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "DISPLAY_PICTURE" => "Y",
                         "DISPLAY_PREVIEW_TEXT" => "Y",
                         "DISPLAY_TOP_PAGER" => "N",
-                        "FIELD_CODE" => array("", ""),
+                        "FIELD_CODE" => ["", ""],
                         "FILTER_NAME" => "",
                         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
                         "IBLOCK_ID" => "6",
@@ -194,7 +189,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "PARENT_SECTION" => "",
                         "PARENT_SECTION_CODE" => "",
                         "PREVIEW_TRUNCATE_LEN" => "",
-                        "PROPERTY_CODE" => array("", ""),
+                        "PROPERTY_CODE" => ["", ""],
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",
                         "SET_META_DESCRIPTION" => "N",
@@ -207,7 +202,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "SORT_ORDER1" => "ASC",
                         "SORT_ORDER2" => "ASC",
                         "STRICT_SECTION_CHECK" => "N"
-                    )
+                    ]
                 );?>
             </div>
         </div>
@@ -215,7 +210,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/14.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/14.png" alt="img">
         </div>
         <div class="paralaxLineRight paralaxLineRight--top"></div>
         <div class="paralaxLineDark--right"></div>
@@ -229,37 +224,34 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."about/include/about__areas_work-title.php",
-                            )
+                            ]
                         );?>
                     </h2>
                 </div>
                 <div class="col-12">
                     <h3 class="subtitle animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."about/include/about__areas_work-subtitle.php",
-                            )
+                            ]
                         );?>
                     </h3>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="direction_of_work__caption animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."about/include/about__areas_work-left.php",
-                            )
+                            ]
                         );?>
                     </div>
                     <a href="<?=SITE_DIR?>projects/" class="d-none d-md-block more-link animUp _anim-items _anim-no-hide">
@@ -273,13 +265,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">01</div>
                                     <div class="direction_of_work__name">
-                                        <?$APPLICATION->IncludeComponent(
-                                            "bitrix:main.include",
-                                            "",
-                                            Array(
+                                        <?php
+                                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                            [
                                                 "AREA_FILE_SHOW" => "file",
                                                 "PATH" => SITE_DIR."about/include/about__areas_work-right-01.php",
-                                            )
+                                            ]
                                         );?>
                                     </div>
                                 </div>
@@ -288,13 +279,12 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">02</div>
                                     <div class="direction_of_work__name">
-                                        <?$APPLICATION->IncludeComponent(
-                                            "bitrix:main.include",
-                                            "",
-                                            Array(
+                                        <?php
+                                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                            [
                                                 "AREA_FILE_SHOW" => "file",
                                                 "PATH" => SITE_DIR."about/include/about__areas_work-right-02.php",
-                                            )
+                                            ]
                                         );?>
                                     </div>
                                 </div>
@@ -303,13 +293,11 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">03</div>
                                     <div class="direction_of_work__name">
-                                        <?$APPLICATION->IncludeComponent(
-                                            "bitrix:main.include",
-                                            "",
-                                            Array(
+                                        <?$APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                            [
                                                 "AREA_FILE_SHOW" => "file",
                                                 "PATH" => SITE_DIR."about/include/about__areas_work-right-03.php",
-                                            )
+                                            ]
                                         );?>
                                     </div>
                                 </div>
@@ -318,13 +306,11 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                                 <div class="direction_of_work__item">
                                     <div class="direction_of_work__count">04</div>
                                     <div class="direction_of_work__name">
-                                        <?$APPLICATION->IncludeComponent(
-                                            "bitrix:main.include",
-                                            "",
-                                            Array(
+                                        <?$APPLICATION->IncludeComponent("bitrix:main.include", "",
+                                            [
                                                 "AREA_FILE_SHOW" => "file",
                                                 "PATH" => SITE_DIR."about/include/about__areas_work-right-04.php",
-                                            )
+                                            ]
                                         );?>
                                     </div>
                                 </div>
@@ -343,7 +329,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/15.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/15.png" alt="img">
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -360,20 +346,20 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."about/include/about__gallery-title.php"
-                            )
+                            ]
                         );?>
                     </h2>
                 </div>
-                <?$APPLICATION->IncludeComponent(
+                <?php
+                $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
                     "about__gallery",
-                    Array(
+                    [
                         "ACTIVE_DATE_FORMAT" => "d.m.Y",
                         "ADD_SECTIONS_CHAIN" => "N",
                         "AJAX_MODE" => "N",
@@ -393,7 +379,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "DISPLAY_PICTURE" => "Y",
                         "DISPLAY_PREVIEW_TEXT" => "Y",
                         "DISPLAY_TOP_PAGER" => "N",
-                        "FIELD_CODE" => array("", ""),
+                        "FIELD_CODE" => ["", ""],
                         "FILTER_NAME" => "",
                         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
                         "IBLOCK_ID" => "5",
@@ -413,7 +399,13 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "PARENT_SECTION" => "",
                         "PARENT_SECTION_CODE" => "",
                         "PREVIEW_TRUNCATE_LEN" => "",
-                        "PROPERTY_CODE" => array("LEFT_TITLE", "RIGHT_VIDEO", "LEFT_TEXT", "RIGHT_TEXT", "MORE_PHOTOS"),
+                        "PROPERTY_CODE" => [
+                            "LEFT_TITLE",
+                            "RIGHT_VIDEO",
+                            "LEFT_TEXT",
+                            "RIGHT_TEXT",
+                            "MORE_PHOTOS"
+                        ],
                         "SEARCH_PAGE" => "/search/",
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",
@@ -431,7 +423,7 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
                         "TEMPLATE_THEME" => "",
                         "USE_RATING" => "N",
                         "USE_SHARE" => "N"
-                    )
+                    ]
                 );?>
             </div>
         </div>
@@ -439,10 +431,10 @@ $asset->addJs('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/5.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/5.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>
