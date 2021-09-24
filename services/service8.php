@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
@@ -75,7 +75,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax paralax--xs">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/27.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/27.png" alt="img">
         </div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
         <div class="paralaxLineGreen"></div>
@@ -212,10 +212,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/26.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/26.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>

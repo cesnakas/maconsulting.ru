@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
@@ -24,7 +24,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/services/2.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/services/2.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -110,8 +110,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                                 </span>
                                 <span class="linkPageService__text">
                                     <span class="linkPageService__name-category">Наши услуги</span>
-                                    <span class="linkPageService__name-page">Анализ организации медицинской
-                                        помощи, сбор информации
+                                    <span class="linkPageService__name-page">
+                                        Анализ организации медицинской<wbr>
+                                        помощи, сбор информации<wbr>
                                         и аналитика</span>
                                 </span>
                             </span>
@@ -138,10 +139,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/18.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/18.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>

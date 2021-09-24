@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
@@ -8,10 +8,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                 <a href="<?=SITE_DIR?>#servicesMain__anchor" class="back-service"><span class="back-service__label">Вернуться к списку услуг</span></a>
                 <div class="service-pagination">
                     <div class="page-section-item__heading">
-                                <span class="page-section-item__number">
-                                    <span class="page-section-item__number-current">01</span>
-                                    <span class="page-section-item__number-all">08</span>
-                                </span>
+                        <span class="page-section-item__number">
+                            <span class="page-section-item__number-current">01</span>
+                            <span class="page-section-item__number-all">08</span>
+                        </span>
                         <span class="page-section-item__name">Наши услуги</span>
                     </div>
                     <div class="service-pagination__btn">
@@ -19,8 +19,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                         <a href="<?=SITE_DIR?>service2/" class="service-pagination__btn-next nav__link-anim"></a>
                     </div>
                 </div>
-                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Анализ организации медицинской помощи, сбор информации
-                    и аналитика</h1>
+                <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Анализ организации медицинской помощи, сбор информации и аналитика</h1>
             </div>
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
@@ -146,10 +145,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/17.png" alt=""/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/17.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>
