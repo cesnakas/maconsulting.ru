@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
@@ -6,21 +6,20 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         <div class="container">
             <div class="heading-page__content">
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">
-                    <? // Тренинги и образовательные программы в области Market Access
-                    $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
+                    <?php // Тренинги и образовательные программы в области Market Access
+                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                        [
                             "AREA_FILE_SHOW" => "file",
                             "PATH" => SITE_DIR."training/include/training__title.php"
-                        )
+                        ]
                     );?>
                 </h1>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
-                    <?$APPLICATION->IncludeComponent(
+                    <?php
+                    $APPLICATION->IncludeComponent(
                         "bitrix:news.line",
                         "training__nav",
-                        Array(
+                        [
                             "ACTIVE_DATE_FORMAT" => "d.m.Y",
                             "CACHE_GROUPS" => "Y",
                             "CACHE_TIME" => "300",
@@ -34,14 +33,14 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
                             "SORT_BY2" => "ID",
                             "SORT_ORDER1" => "ASC",
                             "SORT_ORDER2" => "ASC"
-                        )
+                        ]
                     );?>
                 </nav>
             </div>
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/2.png" alt="img"/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/2.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -51,7 +50,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     <div class="paralax-anim _anim-items _anim-no-hide">
         <div class="paralax paralax--sm paralax--r_green">
             <div class="paralaxImgWrap">
-                <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/7.png" alt="img"/>
+                <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/7.png" alt="img">
             </div>
             <div class="paralaxLineBotWh"></div>
             <div class="paralaxLineRightWh"></div>
@@ -61,10 +60,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         </div>
     </div>
 
-    <?$APPLICATION->IncludeComponent(
+    <?php
+    $APPLICATION->IncludeComponent(
         "bitrix:news.list",
         "training__work",
-        Array(
+        [
             "ACTIVE_DATE_FORMAT" => "d.m.Y",
             "ADD_SECTIONS_CHAIN" => "N",
             "AJAX_MODE" => "N",
@@ -84,7 +84,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "DISPLAY_PICTURE" => "Y",
             "DISPLAY_PREVIEW_TEXT" => "Y",
             "DISPLAY_TOP_PAGER" => "N",
-            "FIELD_CODE" => array("ID", ""),
+            "FIELD_CODE" => ["ID", ""],
             "FILE_404" => "",
             "FILTER_NAME" => "",
             "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
@@ -106,7 +106,19 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "PARENT_SECTION" => "",
             "PARENT_SECTION_CODE" => "",
             "PREVIEW_TRUNCATE_LEN" => "",
-            "PROPERTY_CODE" => array("TRAINING_TITLE", "TRAINING_SUBTITLE", "TRAINING_TEXT", "TRAINING_LIST_LEFT", "TRAINING_LIST_RIGHT", "TRAINING_LIST_ONLY_RIGHT", "TRAINING_BUTTON", "TRAINING_LIST_LEFT_TITLE", "TRAINING_LIST_RIGHT_TITLE", "TRAINING_LIST_ONLY_RIGHT_TITLE"),
+            "PROPERTY_CODE" =>
+            [
+                "TRAINING_TITLE",
+                "TRAINING_SUBTITLE",
+                "TRAINING_TEXT",
+                "TRAINING_LIST_LEFT",
+                "TRAINING_LIST_RIGHT",
+                "TRAINING_LIST_ONLY_RIGHT",
+                "TRAINING_BUTTON",
+                "TRAINING_LIST_LEFT_TITLE",
+                "TRAINING_LIST_RIGHT_TITLE",
+                "TRAINING_LIST_ONLY_RIGHT_TITLE"
+            ],
             "SET_BROWSER_TITLE" => "N",
             "SET_LAST_MODIFIED" => "N",
             "SET_META_DESCRIPTION" => "N",
@@ -119,15 +131,15 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "SORT_ORDER1" => "ASC",
             "SORT_ORDER2" => "ASC",
             "STRICT_SECTION_CHECK" => "N"
-        )
+        ]
     );?>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/6.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/6.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>

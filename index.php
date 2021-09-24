@@ -1,13 +1,14 @@
-<?
+<?php
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 ?>
 
     <section class="sliderMainWrap">
         <div class="container">
-            <?$APPLICATION->IncludeComponent(
+            <?php
+            $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "main__slider",
-                Array(
+                [
                     "ACTIVE_DATE_FORMAT" => "d.m.Y",
                     "ADD_SECTIONS_CHAIN" => "N",
                     "AJAX_MODE" => "N",
@@ -27,7 +28,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "DISPLAY_PICTURE" => "Y",
                     "DISPLAY_PREVIEW_TEXT" => "Y",
                     "DISPLAY_TOP_PAGER" => "N",
-                    "FIELD_CODE" => array("", ""),
+                    "FIELD_CODE" => ["", ""],
                     "FILTER_NAME" => "",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
                     "IBLOCK_ID" => "1",
@@ -46,7 +47,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "PARENT_SECTION" => "",
                     "PARENT_SECTION_CODE" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array("", ""),
+                    "PROPERTY_CODE" => ["", ""],
                     "SET_BROWSER_TITLE" => "N",
                     "SET_LAST_MODIFIED" => "N",
                     "SET_META_DESCRIPTION" => "N",
@@ -59,7 +60,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "SORT_ORDER1" => 'ASC',
                     "SORT_ORDER2" => "ASC",
                     "STRICT_SECTION_CHECK" => "N"
-                )
+                ]
             );?>
         </div>
     </section>
@@ -69,25 +70,23 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="aboutMain__caption animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."include/main__about-left.php"
-                            )
+                            ]
                         );?>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="aboutMain__content animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."include/main__about-right.php"
-                            )
+                            ]
                         );?>
                         <a href="<?=SITE_DIR?>about/" class="more-link">Подробнее о нас.<br>Кто мы и что мы делаем.</a>
                     </div>
@@ -98,7 +97,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/2.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/2.png" alt="img">
         </div>
         <div class="paralaxLineRight"></div>
     </div>
@@ -164,7 +163,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/3.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/3.png" alt="img">
         </div>
         <div class="paralaxLineGreen"></div>
         <div class="paralaxLineLeft paralaxLineLeft--green"></div>
@@ -177,25 +176,23 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                     <h2 class="title animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."include/main__training-title.php"
-                            )
+                            ]
                         );?>
                     </h2>
                 </div>
                 <div class="col-12">
                     <h3 class="subtitle animUp _anim-items _anim-no-hide">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
+                        <?php
+                        $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                            [
                                 "AREA_FILE_SHOW" => "file",
                                 "PATH" => SITE_DIR."include/main__training-subtitle.php"
-                            )
+                            ]
                         );?>
                     </h3>
                 </div>
@@ -233,7 +230,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/4.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/4.png" alt="img">
         </div>
         <div class="paralaxLineRight paralaxLineRight--gray"></div>
     </div>
@@ -249,10 +246,11 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 </div>
             </div>
         </div>
-        <?$APPLICATION->IncludeComponent(
+        <?php
+        $APPLICATION->IncludeComponent(
             "bitrix:photo.section",
             "slider__customers",
-            Array(
+            [
                 "ADD_SECTIONS_CHAIN" => "N",
                 "AJAX_MODE" => "N",
                 "AJAX_OPTION_ADDITIONAL" => "",
@@ -269,7 +267,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 "DISPLAY_TOP_PAGER" => "N",
                 "ELEMENT_SORT_FIELD" => "id",
                 "ELEMENT_SORT_ORDER" => "asc",
-                "FIELD_CODE" => array("",""),
+                "FIELD_CODE" => ["", ""],
                 "FILTER_NAME" => "arrFilter",
                 "IBLOCK_ID" => "7",
                 "IBLOCK_TYPE" => "main",
@@ -285,16 +283,16 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                 "PAGER_TEMPLATE" => ".default",
                 "PAGER_TITLE" => "Фотографии",
                 "PAGE_ELEMENT_COUNT" => "20",
-                "PROPERTY_CODE" => array("",""),
+                "PROPERTY_CODE" => ["", ""],
                 "SECTION_CODE" => "",
                 "SECTION_ID" => $_REQUEST["SECTION_ID"],
                 "SECTION_URL" => "",
-                "SECTION_USER_FIELDS" => array("",""),
+                "SECTION_USER_FIELDS" => ["", ""],
                 "SET_LAST_MODIFIED" => "N",
                 "SET_STATUS_404" => "N",
                 "SET_TITLE" => "N",
                 "SHOW_404" => "N"
-            )
+            ]
         );?>
     </div>
 
@@ -302,15 +300,14 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="subtitle subtitle--black animUp _anim-items _anim-no-hide">
-                        О нас говорят
-                    </h3>
+                    <h3 class="subtitle subtitle--black animUp _anim-items _anim-no-hide">О нас говорят</h3>
                 </div>
             </div>
-            <?$APPLICATION->IncludeComponent(
+            <?php
+            $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "main__reviews",
-                Array(
+                [
                     "ACTIVE_DATE_FORMAT" => "d.m.Y",
                     "ADD_SECTIONS_CHAIN" => "N",
                     "AJAX_MODE" => "N",
@@ -330,7 +327,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "DISPLAY_PICTURE" => "Y",
                     "DISPLAY_PREVIEW_TEXT" => "Y",
                     "DISPLAY_TOP_PAGER" => "N",
-                    "FIELD_CODE" => array("",""),
+                    "FIELD_CODE" => ["", ""],
                     "FILTER_NAME" => "",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "N",
                     "IBLOCK_ID" => "8",
@@ -349,7 +346,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "PARENT_SECTION" => "",
                     "PARENT_SECTION_CODE" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array("REVIEW_COMPANY","REVIEW_DETAIL",""),
+                    "PROPERTY_CODE" => ["REVIEW_COMPANY", "REVIEW_DETAIL", ""],
                     "SET_BROWSER_TITLE" => "N",
                     "SET_LAST_MODIFIED" => "N",
                     "SET_META_DESCRIPTION" => "N",
@@ -362,17 +359,17 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
                     "SORT_ORDER1" => "ASC",
                     "SORT_ORDER2" => "ASC",
                     "STRICT_SECTION_CHECK" => "N"
-                )
+                ]
             );?>
         </div>
     </div>
 
     <div class="paralax">
         <div class="paralaxImgWrap">
-            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/1.png" alt="img"/>
+            <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/1.png" alt="img">
         </div>
     </div>
 
-<?
+<?php
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
