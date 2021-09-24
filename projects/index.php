@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
@@ -7,41 +7,41 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             <div class="heading-page__content">
                 <h1 class="heading-page__title animUp _anim-items _anim-no-hide">Наши<br> проекты</h1>
                 <div class="heading-page__text animUp _anim-items _anim-no-hide">
-                    <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
+                    <?php
+                    $APPLICATION->IncludeComponent("bitrix:main.include", "",
+                        [
                             "AREA_FILE_SHOW" => "file",
                             "PATH" => SITE_DIR."projects/include/projects__subtitle.php"
-                        )
+                        ]
                     );?>
                 </div>
                 <nav class="nav-page animUp _anim-items _anim-no-hide">
-                    <?$APPLICATION->IncludeComponent(
+                    <?php
+                    $APPLICATION->IncludeComponent(
                         "bitrix:news.line",
                         "projects__nav",
-                        Array(
+                        [
                             "ACTIVE_DATE_FORMAT" => "d.m.Y",
                             "CACHE_GROUPS" => "Y",
                             "CACHE_TIME" => "300",
                             "CACHE_TYPE" => "A",
                             "DETAIL_URL" => "#page#ELEMENT_ID#",
-                            "FIELD_CODE" => array("ID","CODE",""),
-                            "IBLOCKS" => array("6"),
+                            "FIELD_CODE" => ["ID", "CODE", ""],
+                            "IBLOCKS" => ["6"],
                             "IBLOCK_TYPE" => "projects",
                             "NEWS_COUNT" => "20",
                             "SORT_BY1" => "ID",
                             "SORT_BY2" => "ID",
                             "SORT_ORDER1" => "ASC",
                             "SORT_ORDER2" => "ASC"
-                        )
+                        ]
                     );?>
                 </nav>
             </div>
             <div class="heading-page__img-wrap _anim-items _anim-no-hide">
                 <div class="heading-page__paralax">
                     <div class="heading-page__paralaxWrap">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/3.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/banner-page/3.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
     <div class="paralax-anim _anim-items _anim-no-hide">
         <div class="paralax paralax--sm paralax--r_green">
             <div class="paralaxImgWrap">
-                <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/9.png" alt=""/>
+                <img class="paralaxImg" src="<?=SITE_TEMPLATE_PATH?>/dist/img/bg/9.png" alt="img">
             </div>
             <div class="paralaxLineBotWh"></div>
             <div class="paralaxLineRightWh"></div>
@@ -61,10 +61,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         </div>
     </div>
 
-    <?$APPLICATION->IncludeComponent(
+    <?php
+    $APPLICATION->IncludeComponent(
         "bitrix:news.list",
         "projects__work",
-        Array(
+        [
             "ACTIVE_DATE_FORMAT" => "d.m.Y",
             "ADD_SECTIONS_CHAIN" => "N",
             "AJAX_MODE" => "N",
@@ -84,7 +85,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "DISPLAY_PICTURE" => "Y",
             "DISPLAY_PREVIEW_TEXT" => "Y",
             "DISPLAY_TOP_PAGER" => "N",
-            "FIELD_CODE" => array("ID", ""),
+            "FIELD_CODE" => ["ID", ""],
             "FILE_404" => "",
             "FILTER_NAME" => "",
             "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
@@ -106,7 +107,12 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "PARENT_SECTION" => "",
             "PARENT_SECTION_CODE" => "",
             "PREVIEW_TRUNCATE_LEN" => "",
-            "PROPERTY_CODE" => array("ITEM_TITLE", "ITEM_SUBTITLE", "ITEM_LIST", "ITEM_BUTTON"),
+            "PROPERTY_CODE" => [
+                "ITEM_TITLE",
+                "ITEM_SUBTITLE",
+                "ITEM_LIST",
+                "ITEM_BUTTON"
+            ],
             "SET_BROWSER_TITLE" => "N",
             "SET_LAST_MODIFIED" => "N",
             "SET_META_DESCRIPTION" => "N",
@@ -119,10 +125,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "SORT_ORDER1" => "ASC",
             "SORT_ORDER2" => "ASC",
             "STRICT_SECTION_CHECK" => "N"
-        )
+        ]
     );?>
 
 
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>
